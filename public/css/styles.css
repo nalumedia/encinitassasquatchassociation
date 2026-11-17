@@ -419,6 +419,7 @@ textarea { min-height: 110px; resize: vertical; }
   width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top;
   border-radius: 12px; margin: 0 0 16px; background: var(--paper-deep);
 }
+.founder-photo-jeanette { object-position: center 8%; }
 .founder h3 { margin-bottom: 0.2em; }
 .faq details {
   border-bottom: 1px solid var(--line); padding: 14px 0;

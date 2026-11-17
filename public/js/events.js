@@ -5,7 +5,7 @@
 
   function loadEvents() {
     if (global.__esaEventsPromise) return global.__esaEventsPromise;
-    global.__esaEventsPromise = fetch("/events.json?v=20261117c", { cache: "no-store" })
+    global.__esaEventsPromise = fetch("/events.json?v=20261117d", { cache: "no-store" })
       .then((r) => {
         if (!r.ok) throw new Error("Could not load events.json");
         return r.json();
