@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join the ESA · Encinitas Sasquatch Association</title>
+  <meta name="description" content="Apply to join the Encinitas Sasquatch Association. We welcome anyone and everyone who believes in something.">
+  <link rel="icon" type="image/png" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/styles.css?v=20261116v">
+    <script src="/js/events.js?v=20261116v" defer></script>
+    <script src="/js/main.js?v=20261116v" defer></script>
+    <script src="/js/config.js?v=20261116v"></script>
+    <script src="/js/forms.js?v=20261116v" defer></script>
+</head>
+<body data-page="join">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="section">
+      <div class="wrap-narrow">
+        <p class="eyebrow">Membership</p>
+        <h1>Join the search</h1>
+        <p>Hi, and welcome. This is the ESA’s own application — same questions as before, fewer Typeform mermaids, more Bigfoot. We welcome anyone and everyone who believes in something. Name and email are required so we can actually send you a welcome letter.</p>
+
+        <div id="join-thanks" class="success" hidden>
+          <h2>You’re in the stack.</h2>
+          <p id="thanks-message">Thank you. Your application will be reviewed and you will get a welcome letter from the ESA crew soon.</p>
+          <div id="thanks-donate" hidden>
+            <div class="placeholder-box" style="color:var(--ink);margin-top:16px;">
+              <strong>Donation next step · placeholder</strong>
+              <p>You said you’d like to donate $40. The current Typeform collected that payment in-form through Stripe (charges were described as appearing from Nalu Media). A standalone Payment Link was not published on the website, so we can’t send you to checkout yet. Add a link in <code>config.json</code> under <code>stripe.donationPaymentLink</code> to turn this into a real button.</p>
+            </div>
+          </div>
+          <p style="margin-top:16px;"><a class="btn btn-sun" href="/upcoming">See what’s coming up</a></p>
+        </div>
+
+        <form id="join-form" class="form-shell" action="/api/join" method="post" novalidate>
+          <div id="join-errors" class="form-error" hidden></div>
+
+          <div class="field">
+            <label for="name">👋 Hi and welcome! What is your name? <span class="req">*</span></label>
+            <p class="hint">Legendary, legal, or the name your friends yell at the parade — we’ll take it.</p>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Nice to meet you. What is your email? <span class="req">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Sweet! What is your phone number?</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+1">
+          </div>
+
+          <div class="field">
+            <label for="awesome">Tell us something awesome about you.</label>
+            <p class="hint">For example, I coach little league, I saw a sasquatch in 2019, I make a mean rack of ribs, etc…</p>
+            <textarea id="awesome" name="awesome"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="birthday">🎂 When were you born?</label>
+            <input type="date" id="birthday" name="birthday">
+          </div>
+
+          <div class="field">
+            <label>Would you like to volunteer to help with ESA events?</label>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="volunteer" value="yes"> Yes</label>
+              <label class="choice"><input type="radio" name="volunteer" value="no"> No</label>
+            </div>
+          </div>
+
+          <div id="volunteer-fields" hidden>
+            <div class="field">
+              <label>Amazing! What are some things that you could do to help?</label>
+              <div class="choices">
+                <label class="choice"><input type="checkbox" name="volunteerSkills" value="Operations &amp; Float Setup"> Operations &amp; Float Setup</label>
+                <label class="choice"><input type="checkbox" name="volunteerSkills" value="Content &amp; Marketing"> Content &amp; Marketing</label>
+                <label class="choice"><input type="checkbox" name="volunteerSkills" value="Recruiting Members &amp; Sponsors"> Recruiting Members &amp; Sponsors</label>
+                <label class="choice"><input type="checkbox" name="volunteerSkills" value="Finding Great Events"> Finding Great Events</label>
+                <label class="choice"><input type="checkbox" name="volunteerSkills" value="Other"> Other</label>
+              </div>
+            </div>
+            <div class="field" id="volunteer-other-wrap" hidden>
+              <label for="volunteerSkillsOther">Tell us about the “other.”</label>
+              <input type="text" id="volunteerSkillsOther" name="volunteerSkillsOther">
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Do you want to donate to the ESA?</label>
+            <p class="hint">Be advised, we are not a 501(c)(3). We use donations to pay for things like the float, giveaways, etc. We will publish our financials to members and take a vote on donating any remaining cash on hand at the end of the year to a charity of our choice.</p>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="donate" value="yes"> Yes</label>
+              <label class="choice"><input type="radio" name="donate" value="no"> No</label>
+            </div>
+          </div>
+
+          <div id="donate-fields" class="field" hidden>
+            <p>That is fantastic. The suggested donation is <strong>$40</strong>.</p>
+            <p class="hint">We use Stripe to process donations. Until a 501(c)(3) is set up, charges have been described as appearing from Nalu Media (a company Ryan owns).</p>
+            <a class="btn btn-sun" id="donate-link" hidden target="_blank" rel="noopener">Donate $40 with Stripe</a>
+            <div class="placeholder-box" id="donate-placeholder">
+              <strong>Donation checkout · placeholder</strong>
+              <p>A public Stripe Payment Link for the $40 donation was not found on the current website or in the Typeform definition (Typeform collected the payment inside the form). Submit this application anyway — Ryan can add a Payment Link later in <code>config.json</code> as <code>stripe.donationPaymentLink</code>.</p>
+            </div>
+          </div>
+
+
+          <div class="hp-field" aria-hidden="true">
+            <label for="join-company">Company</label>
+            <input type="text" id="join-company" name="company" tabindex="-1" autocomplete="off">
+          </div>
+          <button class="btn btn-sea" type="submit">Submit application</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>

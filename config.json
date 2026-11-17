@@ -1,0 +1,22 @@
+{
+  "airtableSync": {
+    "enabled": false,
+    "baseId": "applSwRtJcwCIwmz5",
+    "joinTable": "",
+    "rsvpTable": "",
+    "notes": "Optional later sync, off by default. To turn it on: 1) create Airtable tables (or use existing ones) for membership applications and RSVPs, 2) put the table names in joinTable and rsvpTable, 3) set enabled to true, 4) set the AIRTABLE_API_KEY environment variable when you start the server. Never put the API key in this file or in any other file in this folder. The hook lives in server.js as maybeSyncToAirtable()."
+  },
+  "stripe": {
+    "hatPaymentLink": "https://buy.stripe.com/eVaeYf2LRf7532E7sw",
+    "hatPrice": 18,
+    "donationAmount": 40,
+    "donationPaymentLink": "",
+    "donationNote": "PLACEHOLDER. The current membership Typeform collected a $40 donation in-form through Stripe (charges described as appearing from Nalu Media). No standalone Stripe Payment Link for the $40 donation was published on the current website or in the public Typeform definition. The hat uses the real Payment Link found on the site: https://buy.stripe.com/eVaeYf2LRf7532E7sw. Paste a donation Payment Link here to turn the Join form’s donate button on."
+  },
+  "contact": {
+    "infoEmail": "info@encinitassasquatchassociation.com",
+    "instagram": "https://www.instagram.com/encinitassasquatchassociation/",
+    "facebook": "https://www.facebook.com/encinitassasquatchassociation/",
+    "duckfoot": "https://duckfootbeer.com/"
+  }
+}

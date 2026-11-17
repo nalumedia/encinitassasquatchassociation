@@ -1,0 +1,3007 @@
+{
+  "timezone": "America/Los_Angeles",
+  "updated": "2026-11-16",
+  "count": 21,
+  "events": [
+    {
+      "slug": "holiday-parade-2016",
+      "name": "Encinitas Holiday Parade 2016",
+      "shortName": "The first parade",
+      "type": "Holiday Parade",
+      "date": "2016-12-03",
+      "time": null,
+      "endTime": null,
+      "location": "Coast Hwy 101, Encinitas",
+      "theme": null,
+      "subhead": "Where the tracks begin",
+      "summary": "ESA’s founding year, and the first Encinitas Holiday Parade night in the Photos library. Parade night is confirmed from the pictures, though ESA itself is not clearly visible in this set.",
+      "body": "Saturday, December 3, 2016, is ESA’s founding-year parade night — the first Encinitas Holiday Parade in the association’s photo albums. The pictures confirm a holiday-parade evening on Coast Highway, with lit floats and a crowd in the street. ESA itself is not clearly visible in these 18 shots, so they read as the night the search started rather than a formal float portrait.",
+      "highlights": [
+        "ESA’s founding year",
+        "Parade night confirmed from the photos",
+        "ESA is not clearly visible in this album"
+      ],
+      "notes": [
+        "The Photos album holds 18 items (2 videos, not shown). ESA is not clearly visible in the stills."
+      ],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 1",
+        "Photos album: ESA Holiday Parade 2016"
+      ],
+      "album": "ESA Holiday Parade 2016",
+      "heroImage": "images/events/holiday-parade-2016/02.jpg",
+      "heroThumb": "images/events/holiday-parade-2016/thumbs/02.jpg",
+      "heroFocus": "50% 23%",
+      "images": [
+        {
+          "src": "images/events/holiday-parade-2016/01.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/01.jpg",
+          "alt": "holiday parade 2016 photo 1",
+          "original": "IMG_1345.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/02.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/02.jpg",
+          "alt": "holiday parade 2016 photo 2",
+          "original": "IMG_1347.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/03.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/03.jpg",
+          "alt": "holiday parade 2016 photo 3",
+          "original": "IMG_1348.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/04.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/04.jpg",
+          "alt": "holiday parade 2016 photo 4",
+          "original": "IMG_1349.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/05.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/05.jpg",
+          "alt": "holiday parade 2016 photo 5",
+          "original": "IMG_1350.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/06.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/06.jpg",
+          "alt": "holiday parade 2016 photo 6",
+          "original": "IMG_1351.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/07.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/07.jpg",
+          "alt": "holiday parade 2016 photo 7",
+          "original": "IMG_1352.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/08.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/08.jpg",
+          "alt": "holiday parade 2016 photo 8",
+          "original": "IMG_1353.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/09.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/09.jpg",
+          "alt": "holiday parade 2016 photo 9",
+          "original": "IMG_1354.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/10.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/10.jpg",
+          "alt": "holiday parade 2016 photo 10",
+          "original": "IMG_1356.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/11.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/11.jpg",
+          "alt": "holiday parade 2016 photo 11",
+          "original": "IMG_1357.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/12.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/12.jpg",
+          "alt": "holiday parade 2016 photo 12",
+          "original": "IMG_1358.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/13.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/13.jpg",
+          "alt": "holiday parade 2016 photo 13",
+          "original": "IMG_1359.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/14.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/14.jpg",
+          "alt": "holiday parade 2016 photo 14",
+          "original": "IMG_1360.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/15.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/15.jpg",
+          "alt": "holiday parade 2016 photo 15",
+          "original": "IMG_1361.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2016/16.jpg",
+          "thumb": "images/events/holiday-parade-2016/thumbs/16.jpg",
+          "alt": "holiday parade 2016 photo 16",
+          "original": "IMG_1365.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "holiday-parade-2017",
+      "name": "Encinitas Holiday Parade 2017",
+      "shortName": "Float staging",
+      "type": "Holiday Parade",
+      "date": "2017-12-02",
+      "time": null,
+      "endTime": null,
+      "location": "Coast Hwy 101, Encinitas",
+      "theme": null,
+      "subhead": "The sign goes on the truck",
+      "summary": "Float staging for the 2017 Encinitas Holiday Parade, with the Encinitas Sasquatch Association sign on the truck and a sunset over the coast before the roll-out.",
+      "body": "On Saturday, December 2, 2017, ESA staged the float for the Encinitas Holiday Parade. The album is a short, clear one: the association’s banner on the truck, a little pre-parade setup, and that late-afternoon Encinitas light over the palisades. This is the first year the Photos library shows the ESA sign in the frame.",
+      "highlights": [
+        "Float staging with the ESA sign",
+        "Saturday, December 2, 2017"
+      ],
+      "notes": [],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 2",
+        "Photos album: ESA Holiday Parade 2017"
+      ],
+      "album": "ESA Holiday Parade 2017",
+      "heroImage": "images/events/holiday-parade-2017/04.jpg",
+      "heroThumb": "images/events/holiday-parade-2017/thumbs/04.jpg",
+      "heroFocus": "50% 50%",
+      "images": [
+        {
+          "src": "images/events/holiday-parade-2017/01.jpg",
+          "thumb": "images/events/holiday-parade-2017/thumbs/01.jpg",
+          "alt": "holiday parade 2017 photo 1",
+          "original": "IMG_0108.jpg"
+        },
+        {
+          "src": "images/events/holiday-parade-2017/02.jpg",
+          "thumb": "images/events/holiday-parade-2017/thumbs/02.jpg",
+          "alt": "holiday parade 2017 photo 2",
+          "original": "IMG_0110.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2017/03.jpg",
+          "thumb": "images/events/holiday-parade-2017/thumbs/03.jpg",
+          "alt": "holiday parade 2017 photo 3",
+          "original": "IMG_0111.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2017/04.jpg",
+          "thumb": "images/events/holiday-parade-2017/thumbs/04.jpg",
+          "alt": "holiday parade 2017 photo 4",
+          "original": "IMG_0112.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2017/05.jpg",
+          "thumb": "images/events/holiday-parade-2017/thumbs/05.jpg",
+          "alt": "holiday parade 2017 photo 5",
+          "original": "IMG_0113.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2017/06.jpg",
+          "thumb": "images/events/holiday-parade-2017/thumbs/06.jpg",
+          "alt": "holiday parade 2017 photo 6",
+          "original": "IMG_0114.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2017/07.jpg",
+          "thumb": "images/events/holiday-parade-2017/thumbs/07.jpg",
+          "alt": "holiday parade 2017 photo 7",
+          "original": "IMG_0115.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2017/08.jpg",
+          "thumb": "images/events/holiday-parade-2017/thumbs/08.jpg",
+          "alt": "holiday parade 2017 photo 8",
+          "original": "IMG_0116.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2017/09.jpg",
+          "thumb": "images/events/holiday-parade-2017/thumbs/09.jpg",
+          "alt": "holiday parade 2017 photo 9",
+          "original": "IMG_0117.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2017/10.jpg",
+          "thumb": "images/events/holiday-parade-2017/thumbs/10.jpg",
+          "alt": "holiday parade 2017 photo 10",
+          "original": "IMG_0118.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2017/11.jpg",
+          "thumb": "images/events/holiday-parade-2017/thumbs/11.jpg",
+          "alt": "holiday parade 2017 photo 11",
+          "original": "IMG_0119.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "holiday-parade-2018",
+      "name": "Encinitas Holiday Parade 2018",
+      "shortName": "Botanical Oasis",
+      "type": "Holiday Parade",
+      "date": "2018-12-01",
+      "time": null,
+      "endTime": null,
+      "location": "Coast Hwy 101, Encinitas",
+      "theme": "Botanical Oasis",
+      "subhead": "Let's light this candle",
+      "summary": "The city’s theme was Botanical Oasis. ESA’s story: El Squatcho and a roost of monarchs heading south to Mexico, stopping by Encinitas on the way.",
+      "body": "On Saturday, December 1, 2018, the Encinitas Holiday Parade celebrated Botanical Oasis — the flora and fauna of the city by the sea. ESA’s version of that story was El Squatcho (aka Bigfoot) traveling with a roost of monarchs on their migration to Mexico, a stopover in Encinitas before the warm winter grounds. (An older recap story was dated December 10; the parade itself, and the Photos album, are December 1.)",
+      "highlights": [
+        "Parade theme: Botanical Oasis",
+        "El Squatcho and a roost of monarchs heading south",
+        "Saturday, December 1, 2018"
+      ],
+      "notes": [
+        "An earlier timeline used December 10, 2018, which is the recap story’s date. ESA-Events.md and the Photos album confirm Saturday, December 1."
+      ],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 3",
+        "Airtable Stories, “Encinitas Holiday Parade 2018”",
+        "Photos album: ESA Holiday Parade 2018"
+      ],
+      "album": "ESA Holiday Parade 2018",
+      "heroImage": "images/events/holiday-parade-2018/15.jpg",
+      "heroThumb": "images/events/holiday-parade-2018/thumbs/15.jpg",
+      "heroFocus": "50% 10%",
+      "images": [
+        {
+          "src": "images/events/holiday-parade-2018/01.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/01.jpg",
+          "alt": "holiday parade 2018 photo 1",
+          "original": "56540077163__6D330DF2-4A5C-40E7-934D-B8EB594664EA.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/02.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/02.jpg",
+          "alt": "holiday parade 2018 photo 2",
+          "original": "56540176044__7D44BACD-AA01-4D6C-8C2E-27C24FF6DD61.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/03.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/03.jpg",
+          "alt": "holiday parade 2018 photo 3",
+          "original": "56541069153__DA9A1B74-412A-4191-B6BF-FC72E9AAEB77.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/04.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/04.jpg",
+          "alt": "holiday parade 2018 photo 4",
+          "original": "IMG_5220.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/05.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/05.jpg",
+          "alt": "holiday parade 2018 photo 5",
+          "original": "IMG_5221.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/06.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/06.jpg",
+          "alt": "holiday parade 2018 photo 6",
+          "original": "IMG_5222.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/07.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/07.jpg",
+          "alt": "holiday parade 2018 photo 7",
+          "original": "IMG_5226.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/08.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/08.jpg",
+          "alt": "holiday parade 2018 photo 8",
+          "original": "IMG_5227.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/09.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/09.jpg",
+          "alt": "holiday parade 2018 photo 9",
+          "original": "IMG_5228.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/10.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/10.jpg",
+          "alt": "holiday parade 2018 photo 10",
+          "original": "IMG_5229.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/11.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/11.jpg",
+          "alt": "holiday parade 2018 photo 11",
+          "original": "IMG_5230.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/12.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/12.jpg",
+          "alt": "holiday parade 2018 photo 12",
+          "original": "IMG_5232.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/13.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/13.jpg",
+          "alt": "holiday parade 2018 photo 13",
+          "original": "IMG_5237.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/14.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/14.jpg",
+          "alt": "holiday parade 2018 photo 14",
+          "original": "IMG_5238.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/15.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/15.jpg",
+          "alt": "holiday parade 2018 photo 15",
+          "original": "IMG_5240.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/16.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/16.jpg",
+          "alt": "holiday parade 2018 photo 16",
+          "original": "IMG_5245.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2018/17.jpg",
+          "thumb": "images/events/holiday-parade-2018/thumbs/17.jpg",
+          "alt": "holiday parade 2018 photo 17",
+          "original": "IMG_5246.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "school-visit-2019",
+      "name": "School visit and sign night 2019",
+      "shortName": "Bigfoot talk",
+      "type": "School Visit",
+      "date": "2019-12-06",
+      "time": null,
+      "endTime": null,
+      "location": "Encinitas",
+      "theme": null,
+      "subhead": "A classroom, a sign, a parade tomorrow",
+      "summary": "The day before the 2019 parade: a classroom Bigfoot talk and sign prep. The album covers the morning and midday; some evening shots from that day were left out of the window.",
+      "body": "On Friday, December 6, 2019, ESA did a school visit — a Bigfoot talk in the classroom — and started getting signs ready for the next night’s parade. The Photos album runs from 6:47 AM to 12:45 PM. Fourteen evening shots from that same day are not in the album; they may be the sign night itself, and they have not been reviewed into the set.",
+      "highlights": [
+        "Classroom presentation and sign prep for the 2019 parade",
+        "Friday, December 6, 2019"
+      ],
+      "notes": [
+        "14 evening shots from that day are not in the album (possibly the sign night). They were outside the time window and have not been reviewed."
+      ],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 4",
+        "Photos album: ESA School Visit and Sign Night 2019"
+      ],
+      "album": "ESA School Visit and Sign Night 2019",
+      "heroImage": "images/events/school-visit-2019/01.jpg",
+      "heroThumb": "images/events/school-visit-2019/thumbs/01.jpg",
+      "heroFocus": "50% 42%",
+      "images": [
+        {
+          "src": "images/events/school-visit-2019/01.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/01.jpg",
+          "alt": "school visit 2019 photo 1",
+          "original": "IMG_1101.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/02.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/02.jpg",
+          "alt": "school visit 2019 photo 2",
+          "original": "59734871474__CBBCE10E-A728-4CEB-A9F6-3BCDFB461F7F.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/03.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/03.jpg",
+          "alt": "school visit 2019 photo 3",
+          "original": "IMG_1082.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/04.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/04.jpg",
+          "alt": "school visit 2019 photo 4",
+          "original": "IMG_1083.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/05.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/05.jpg",
+          "alt": "school visit 2019 photo 5",
+          "original": "IMG_1085.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/06.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/06.jpg",
+          "alt": "school visit 2019 photo 6",
+          "original": "IMG_1086.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/07.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/07.jpg",
+          "alt": "school visit 2019 photo 7",
+          "original": "IMG_1087.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/08.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/08.jpg",
+          "alt": "school visit 2019 photo 8",
+          "original": "IMG_1089.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/09.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/09.jpg",
+          "alt": "school visit 2019 photo 9",
+          "original": "IMG_1090.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/10.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/10.jpg",
+          "alt": "school visit 2019 photo 10",
+          "original": "IMG_1092.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/11.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/11.jpg",
+          "alt": "school visit 2019 photo 11",
+          "original": "IMG_1093.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/12.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/12.jpg",
+          "alt": "school visit 2019 photo 12",
+          "original": "IMG_1094.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/13.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/13.jpg",
+          "alt": "school visit 2019 photo 13",
+          "original": "IMG_1095.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/14.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/14.jpg",
+          "alt": "school visit 2019 photo 14",
+          "original": "IMG_1096.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/15.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/15.jpg",
+          "alt": "school visit 2019 photo 15",
+          "original": "IMG_1098.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/16.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/16.jpg",
+          "alt": "school visit 2019 photo 16",
+          "original": "IMG_1099.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/17.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/17.jpg",
+          "alt": "school visit 2019 photo 17",
+          "original": "IMG_1100.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/18.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/18.jpg",
+          "alt": "school visit 2019 photo 18",
+          "original": "IMG_1102.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/19.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/19.jpg",
+          "alt": "school visit 2019 photo 19",
+          "original": "IMG_1103.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/20.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/20.jpg",
+          "alt": "school visit 2019 photo 20",
+          "original": "IMG_1104.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/21.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/21.jpg",
+          "alt": "school visit 2019 photo 21",
+          "original": "IMG_1105.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/22.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/22.jpg",
+          "alt": "school visit 2019 photo 22",
+          "original": "IMG_1106.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/23.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/23.jpg",
+          "alt": "school visit 2019 photo 23",
+          "original": "IMG_1108.jpeg"
+        },
+        {
+          "src": "images/events/school-visit-2019/24.jpg",
+          "thumb": "images/events/school-visit-2019/thumbs/24.jpg",
+          "alt": "school visit 2019 photo 24",
+          "original": "IMG_1109.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "holiday-parade-2019",
+      "name": "Encinitas Holiday Parade 2019",
+      "shortName": "Encinitas On the Move",
+      "type": "Holiday Parade",
+      "date": "2019-12-07",
+      "time": null,
+      "endTime": null,
+      "location": "Coast Hwy 101, Encinitas",
+      "theme": "Encinitas On the Move!",
+      "subhead": "Spreading wonder",
+      "summary": "Theme: Encinitas On the Move! Nessie joined the crew. ESA took 1st place for Most Spirit and 2nd for Most Unusual.",
+      "body": "On Saturday, December 7, 2019, the Encinitas Sasquatch Association rolled in the Encinitas Holiday Parade under the theme “Encinitas On the Move!” — a celebration of how this town gets around. Bigfoot’s good pal Nessie joined the crew, and ESA came home with 1st place for Most Spirit and 2nd place for Most Unusual. If you look closely this time of year, you can still find migrating sasquatches enjoying the sun, sand, and surf.",
+      "highlights": [
+        "Theme: Encinitas On the Move!",
+        "1st place, Most Spirit",
+        "2nd place, Most Unusual",
+        "Nessie joins the crew"
+      ],
+      "notes": [],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 5",
+        "Airtable Stories, “Encinitas Holiday Parade 2019”",
+        "Photos album: ESA Holiday Parade 2019"
+      ],
+      "album": "ESA Holiday Parade 2019",
+      "heroImage": "images/events/holiday-parade-2019/17.jpg",
+      "heroThumb": "images/events/holiday-parade-2019/thumbs/17.jpg",
+      "heroFocus": "50% 8%",
+      "images": [
+        {
+          "src": "images/events/holiday-parade-2019/01.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/01.jpg",
+          "alt": "holiday parade 2019 photo 1",
+          "original": "IMG_0829.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/02.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/02.jpg",
+          "alt": "holiday parade 2019 photo 2",
+          "original": "IMG_0832.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/03.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/03.jpg",
+          "alt": "holiday parade 2019 photo 3",
+          "original": "IMG_1135.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/04.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/04.jpg",
+          "alt": "holiday parade 2019 photo 4",
+          "original": "IMG_1136.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/05.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/05.jpg",
+          "alt": "holiday parade 2019 photo 5",
+          "original": "IMG_1141.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/06.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/06.jpg",
+          "alt": "holiday parade 2019 photo 6",
+          "original": "IMG_1153.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/07.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/07.jpg",
+          "alt": "holiday parade 2019 photo 7",
+          "original": "IMG_1154.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/08.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/08.jpg",
+          "alt": "holiday parade 2019 photo 8",
+          "original": "IMG_1155.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/09.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/09.jpg",
+          "alt": "holiday parade 2019 photo 9",
+          "original": "IMG_1156.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/10.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/10.jpg",
+          "alt": "holiday parade 2019 photo 10",
+          "original": "IMG_1157.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/11.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/11.jpg",
+          "alt": "holiday parade 2019 photo 11",
+          "original": "IMG_1158.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/12.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/12.jpg",
+          "alt": "holiday parade 2019 photo 12",
+          "original": "IMG_1160.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/13.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/13.jpg",
+          "alt": "holiday parade 2019 photo 13",
+          "original": "IMG_1161.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/14.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/14.jpg",
+          "alt": "holiday parade 2019 photo 14",
+          "original": "IMG_1162.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/15.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/15.jpg",
+          "alt": "holiday parade 2019 photo 15",
+          "original": "IMG_1163.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/16.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/16.jpg",
+          "alt": "holiday parade 2019 photo 16",
+          "original": "IMG_1164.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2019/17.jpg",
+          "thumb": "images/events/holiday-parade-2019/thumbs/17.jpg",
+          "alt": "holiday parade 2019 photo 17",
+          "original": "IMG_1165.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "holiday-parade-2020",
+      "name": "Holiday Parade 2020, COVID edition",
+      "shortName": "A socially distanced stroll",
+      "type": "Holiday Parade",
+      "date": "2020-12",
+      "dateDisplay": "Dec 2020",
+      "datePrecision": "month",
+      "dateUncertain": true,
+      "sortDate": "2020-12-15",
+      "time": null,
+      "endTime": null,
+      "location": "Encinitas Ranch, Encinitas",
+      "theme": null,
+      "subhead": "Spreading joy",
+      "summary": "A socially distanced stroll through Encinitas Ranch instead of the usual parade route. The exact date is still unresolved; the Photos album is a backyard BELIEVE-sign set from the evening of Friday, December 11.",
+      "body": "In December 2020, the Encinitas Sasquatch Association spread holiday joy with a socially distanced stroll through Encinitas Ranch — a chance to meet neighbors, smile, and keep the tradition going when the usual parade couldn’t. The exact date is still an open question: a recap was dated December 5, the Photos album is a backyard set with the lit BELIEVE sign on Friday, December 11, and a calendar screenshot mentions December 18. Nothing clearly ESA appears in Photos on the 5th or the 18th. Until that is settled, we list this one as December 2020.",
+      "highlights": [
+        "Socially distanced stroll through Encinitas Ranch",
+        "Date unresolved — shown as Dec 2020"
+      ],
+      "notes": [
+        "Three sources disagree on the date: a recap dated Dec 5; Photos of the backyard BELIEVE set on Fri Dec 11, 7:57–8:21 PM; a calendar alert in a screenshot reading “Big Foot Parade, December 18, 2020, 18:00.” Nothing ESA is in Photos on Dec 5 or Dec 18. The best 2020 material (lit trucks, masked crew with BELIEVE signs) is in the group chat, not in Photos."
+      ],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 6 and Open questions",
+        "Airtable Stories, “Encinitas Holiday Parade 2020”",
+        "Photos album: ESA COVID Edition 2020"
+      ],
+      "album": "ESA COVID Edition 2020",
+      "heroImage": "images/events/holiday-parade-2020/01.jpg",
+      "heroThumb": "images/events/holiday-parade-2020/thumbs/01.jpg",
+      "heroFocus": "42% 27%",
+      "images": [
+        {
+          "src": "images/events/holiday-parade-2020/01.jpg",
+          "thumb": "images/events/holiday-parade-2020/thumbs/01.jpg",
+          "alt": "holiday parade 2020 photo 1",
+          "original": "IMG_6398.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2020/02.jpg",
+          "thumb": "images/events/holiday-parade-2020/thumbs/02.jpg",
+          "alt": "holiday parade 2020 photo 2",
+          "original": "IMG_6399.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "parade-prep-2021",
+      "name": "Parade prep and sign-making 2021",
+      "shortName": "Squatch Saves Parade",
+      "type": "Parade Prep",
+      "date": "2021-12-03",
+      "time": null,
+      "endTime": null,
+      "location": "Encinitas",
+      "theme": null,
+      "subhead": "Squatch Saves Parade",
+      "summary": "The night before the return to Coast Highway: “Squatch Saves Parade” signs, paint, and prep for Saturday’s roll-out.",
+      "body": "On Friday, December 3, 2021, ESA spent the evening making signs — including “Squatch Saves Parade” — getting ready to return to the Encinitas Holiday Parade the next night. After a year of a socially distanced stroll, the crew was prepping to be back on Coast Highway 101.",
+      "highlights": [
+        "“Squatch Saves Parade” signs",
+        "Friday, December 3, 2021, the night before the parade"
+      ],
+      "notes": [],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 7",
+        "Photos album: ESA Parade Prep 2021"
+      ],
+      "album": "ESA Parade Prep 2021",
+      "heroImage": "images/events/parade-prep-2021/07.jpg",
+      "heroThumb": "images/events/parade-prep-2021/thumbs/07.jpg",
+      "heroFocus": "50% 48%",
+      "images": [
+        {
+          "src": "images/events/parade-prep-2021/01.jpg",
+          "thumb": "images/events/parade-prep-2021/thumbs/01.jpg",
+          "alt": "parade prep 2021 photo 1",
+          "original": "IMG_1943.jpeg"
+        },
+        {
+          "src": "images/events/parade-prep-2021/02.jpg",
+          "thumb": "images/events/parade-prep-2021/thumbs/02.jpg",
+          "alt": "parade prep 2021 photo 2",
+          "original": "IMG_1951.jpeg"
+        },
+        {
+          "src": "images/events/parade-prep-2021/03.jpg",
+          "thumb": "images/events/parade-prep-2021/thumbs/03.jpg",
+          "alt": "parade prep 2021 photo 3",
+          "original": "IMG_1954.jpeg"
+        },
+        {
+          "src": "images/events/parade-prep-2021/04.jpg",
+          "thumb": "images/events/parade-prep-2021/thumbs/04.jpg",
+          "alt": "parade prep 2021 photo 4",
+          "original": "IMG_1955.jpeg"
+        },
+        {
+          "src": "images/events/parade-prep-2021/05.jpg",
+          "thumb": "images/events/parade-prep-2021/thumbs/05.jpg",
+          "alt": "parade prep 2021 photo 5",
+          "original": "IMG_1958.jpeg"
+        },
+        {
+          "src": "images/events/parade-prep-2021/06.jpg",
+          "thumb": "images/events/parade-prep-2021/thumbs/06.jpg",
+          "alt": "parade prep 2021 photo 6",
+          "original": "IMG_1959.jpeg"
+        },
+        {
+          "src": "images/events/parade-prep-2021/07.jpg",
+          "thumb": "images/events/parade-prep-2021/thumbs/07.jpg",
+          "alt": "parade prep 2021 photo 7",
+          "original": "IMG_1960.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "holiday-parade-2021",
+      "name": "Encinitas Holiday Parade 2021",
+      "shortName": "Back in business",
+      "type": "Holiday Parade",
+      "date": "2021-12-04",
+      "time": "17:30",
+      "endTime": null,
+      "location": "Coast Hwy 101, Encinitas",
+      "theme": null,
+      "subhead": "Back in business",
+      "summary": "ESA returned to Coast Hwy 101 at 5:30 PM after the 2020 stroll. Clips with the ESA banner were shot 5:49 to 6:06 PM on Saturday, December 4 — settling an earlier Dec 4-or-5 question.",
+      "body": "On Saturday, December 4, 2021, at 5:30 PM, the Encinitas Sasquatch Association came back to the streets of Encinitas. After the 2020 stroll, Bigfoot’s favorite stopover on the migration south was a proper parade again. An earlier record had left the date as “Dec 4 or 5”; clips with the ESA banner were shot 5:49 to 6:06 PM on December 4, so that is the night we use. Thanks to everyone who stayed safe and came back out — and to the doctors, nurses, EMTs, and front-line workers who helped open Encinitas back up. We are better together.",
+      "highlights": [
+        "Return to Coast Hwy 101 after the 2020 stroll",
+        "Saturday, December 4, 2021, 5:30 PM"
+      ],
+      "notes": [
+        "An earlier timeline left the date as Dec 4 or 5. ESA-Events.md confirms Saturday, December 4 from clips with the ESA banner shot 5:49–6:06 PM."
+      ],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 8",
+        "Airtable Stories, “Encinitas Holiday Parade 2021”",
+        "Photos album: ESA Holiday Parade 2021"
+      ],
+      "album": "ESA Holiday Parade 2021",
+      "heroImage": "images/events/holiday-parade-2021/11.jpg",
+      "heroThumb": "images/events/holiday-parade-2021/thumbs/11.jpg",
+      "heroFocus": "50% 45%",
+      "images": [
+        {
+          "src": "images/events/holiday-parade-2021/01.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/01.jpg",
+          "alt": "holiday parade 2021 photo 1",
+          "original": "IMG_1465.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/02.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/02.jpg",
+          "alt": "holiday parade 2021 photo 2",
+          "original": "IMG_1477.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/03.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/03.jpg",
+          "alt": "holiday parade 2021 photo 3",
+          "original": "IMG_1969.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/04.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/04.jpg",
+          "alt": "holiday parade 2021 photo 4",
+          "original": "IMG_1970.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/05.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/05.jpg",
+          "alt": "holiday parade 2021 photo 5",
+          "original": "IMG_1972.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/06.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/06.jpg",
+          "alt": "holiday parade 2021 photo 6",
+          "original": "IMG_1974.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/07.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/07.jpg",
+          "alt": "holiday parade 2021 photo 7",
+          "original": "IMG_1976.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/08.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/08.jpg",
+          "alt": "holiday parade 2021 photo 8",
+          "original": "IMG_1978.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/09.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/09.jpg",
+          "alt": "holiday parade 2021 photo 9",
+          "original": "IMG_1980.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/10.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/10.jpg",
+          "alt": "holiday parade 2021 photo 10",
+          "original": "IMG_1981.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/11.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/11.jpg",
+          "alt": "holiday parade 2021 photo 11",
+          "original": "IMG_1983.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/12.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/12.jpg",
+          "alt": "holiday parade 2021 photo 12",
+          "original": "IMG_1985.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/13.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/13.jpg",
+          "alt": "holiday parade 2021 photo 13",
+          "original": "IMG_1987.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/14.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/14.jpg",
+          "alt": "holiday parade 2021 photo 14",
+          "original": "IMG_1989.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/15.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/15.jpg",
+          "alt": "holiday parade 2021 photo 15",
+          "original": "IMG_1991.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/16.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/16.jpg",
+          "alt": "holiday parade 2021 photo 16",
+          "original": "IMG_1992.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/17.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/17.jpg",
+          "alt": "holiday parade 2021 photo 17",
+          "original": "IMG_1997.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/18.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/18.jpg",
+          "alt": "holiday parade 2021 photo 18",
+          "original": "IMG_1999.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/19.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/19.jpg",
+          "alt": "holiday parade 2021 photo 19",
+          "original": "IMG_2002.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/20.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/20.jpg",
+          "alt": "holiday parade 2021 photo 20",
+          "original": "IMG_2006.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/21.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/21.jpg",
+          "alt": "holiday parade 2021 photo 21",
+          "original": "IMG_9157.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/22.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/22.jpg",
+          "alt": "holiday parade 2021 photo 22",
+          "original": "IMG_9158.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/23.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/23.jpg",
+          "alt": "holiday parade 2021 photo 23",
+          "original": "IMG_9166.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2021/24.jpg",
+          "thumb": "images/events/holiday-parade-2021/thumbs/24.jpg",
+          "alt": "holiday parade 2021 photo 24",
+          "original": "IMG_9169.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "pride-2022",
+      "name": "San Diego Pride 2022",
+      "shortName": "Bigfoot loves everyone",
+      "type": "Pride",
+      "date": "2022-07-16",
+      "time": null,
+      "endTime": null,
+      "location": "San Diego Pride Parade, San Diego",
+      "theme": null,
+      "subhead": "Bigfoot loves everyone",
+      "summary": "ESA’s first Pride. A float celebrating love and kindness, built as a surprise for co-founder Allison Palmer’s 50th birthday.",
+      "body": "Saturday, July 16, 2022, was ESA’s first San Diego Pride. Bigfoot loves everyone, and there is no better place to say so than this parade. The float was built as a surprise for co-founder Allison Palmer’s 50th birthday — a rolling thank-you for love and kindness, and for everyone who came out.",
+      "highlights": [
+        "ESA’s first Pride",
+        "Surprise 50th birthday float for co-founder Allison Palmer"
+      ],
+      "notes": [],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 9",
+        "Airtable Stories, “San Diego Pride 2022”",
+        "Photos album: ESA Pride Parade 2022"
+      ],
+      "album": "ESA Pride Parade 2022",
+      "heroImage": "images/events/pride-2022/14.jpg",
+      "heroThumb": "images/events/pride-2022/thumbs/14.jpg",
+      "heroFocus": "50% 55%",
+      "images": [
+        {
+          "src": "images/events/pride-2022/01.jpg",
+          "thumb": "images/events/pride-2022/thumbs/01.jpg",
+          "alt": "pride 2022 photo 1",
+          "original": "FF593DA7-7AED-46A0-8035-377EBAC411BB.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/02.jpg",
+          "thumb": "images/events/pride-2022/thumbs/02.jpg",
+          "alt": "pride 2022 photo 2",
+          "original": "IMG_1045.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/03.jpg",
+          "thumb": "images/events/pride-2022/thumbs/03.jpg",
+          "alt": "pride 2022 photo 3",
+          "original": "IMG_3630.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/04.jpg",
+          "thumb": "images/events/pride-2022/thumbs/04.jpg",
+          "alt": "pride 2022 photo 4",
+          "original": "IMG_3631.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/05.jpg",
+          "thumb": "images/events/pride-2022/thumbs/05.jpg",
+          "alt": "pride 2022 photo 5",
+          "original": "IMG_3632.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/06.jpg",
+          "thumb": "images/events/pride-2022/thumbs/06.jpg",
+          "alt": "pride 2022 photo 6",
+          "original": "IMG_3634.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/07.jpg",
+          "thumb": "images/events/pride-2022/thumbs/07.jpg",
+          "alt": "pride 2022 photo 7",
+          "original": "IMG_3635.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/08.jpg",
+          "thumb": "images/events/pride-2022/thumbs/08.jpg",
+          "alt": "pride 2022 photo 8",
+          "original": "IMG_3636.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/09.jpg",
+          "thumb": "images/events/pride-2022/thumbs/09.jpg",
+          "alt": "pride 2022 photo 9",
+          "original": "IMG_3637.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/10.jpg",
+          "thumb": "images/events/pride-2022/thumbs/10.jpg",
+          "alt": "pride 2022 photo 10",
+          "original": "IMG_3639.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/11.jpg",
+          "thumb": "images/events/pride-2022/thumbs/11.jpg",
+          "alt": "pride 2022 photo 11",
+          "original": "IMG_3640.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/12.jpg",
+          "thumb": "images/events/pride-2022/thumbs/12.jpg",
+          "alt": "pride 2022 photo 12",
+          "original": "IMG_3641.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/13.jpg",
+          "thumb": "images/events/pride-2022/thumbs/13.jpg",
+          "alt": "pride 2022 photo 13",
+          "original": "IMG_3652.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/14.jpg",
+          "thumb": "images/events/pride-2022/thumbs/14.jpg",
+          "alt": "pride 2022 photo 14",
+          "original": "IMG_3654.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/15.jpg",
+          "thumb": "images/events/pride-2022/thumbs/15.jpg",
+          "alt": "pride 2022 photo 15",
+          "original": "IMG_3655.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/16.jpg",
+          "thumb": "images/events/pride-2022/thumbs/16.jpg",
+          "alt": "pride 2022 photo 16",
+          "original": "IMG_3657.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/17.jpg",
+          "thumb": "images/events/pride-2022/thumbs/17.jpg",
+          "alt": "pride 2022 photo 17",
+          "original": "IMG_3658.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/18.jpg",
+          "thumb": "images/events/pride-2022/thumbs/18.jpg",
+          "alt": "pride 2022 photo 18",
+          "original": "IMG_3659.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/19.jpg",
+          "thumb": "images/events/pride-2022/thumbs/19.jpg",
+          "alt": "pride 2022 photo 19",
+          "original": "IMG_3660.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/20.jpg",
+          "thumb": "images/events/pride-2022/thumbs/20.jpg",
+          "alt": "pride 2022 photo 20",
+          "original": "IMG_3662.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/21.jpg",
+          "thumb": "images/events/pride-2022/thumbs/21.jpg",
+          "alt": "pride 2022 photo 21",
+          "original": "IMG_3663.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/22.jpg",
+          "thumb": "images/events/pride-2022/thumbs/22.jpg",
+          "alt": "pride 2022 photo 22",
+          "original": "IMG_3664.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/23.jpg",
+          "thumb": "images/events/pride-2022/thumbs/23.jpg",
+          "alt": "pride 2022 photo 23",
+          "original": "IMG_3669.jpeg"
+        },
+        {
+          "src": "images/events/pride-2022/24.jpg",
+          "thumb": "images/events/pride-2022/thumbs/24.jpg",
+          "alt": "pride 2022 photo 24",
+          "original": "IMG_3670.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "holiday-parade-2022",
+      "name": "Encinitas Holiday Parade 2022",
+      "shortName": "Live. Laugh. Love. Lima.",
+      "type": "Holiday Parade",
+      "date": "2022-12-03",
+      "time": "17:30",
+      "endTime": null,
+      "location": "Coast Hwy 101, Encinitas",
+      "theme": "Classic Encinitas / the lima bean",
+      "subhead": "Live, love, lima",
+      "summary": "5:30 PM on Coast Hwy 101. The city’s theme was Classic Encinitas; ESA saluted the lima bean — Live. Laugh. Love. Lima.",
+      "body": "On Saturday, December 3, 2022, at 5:30 PM, ESA rolled down Coast Highway 101 under Classic Encinitas and paid tribute to the lima bean, a crop of Encinitas settlers from long ago. Some believe it is the sun, the surf, and the people that lure Bigfoot here. ESA believes it is the scent of a fresh pot of lima beans. Farmer attire preferred; squatch hunter if that’s all you’ve got.",
+      "highlights": [
+        "Theme: Classic Encinitas and the lima bean",
+        "Saturday, December 3, 2022, 5:30 PM"
+      ],
+      "notes": [],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 10",
+        "Airtable Stories and Events, 2022 parade",
+        "Photos album: ESA Holiday Parade 2022"
+      ],
+      "album": "ESA Holiday Parade 2022",
+      "heroImage": "images/events/holiday-parade-2022/06.jpg",
+      "heroThumb": "images/events/holiday-parade-2022/thumbs/06.jpg",
+      "heroFocus": "50% 48%",
+      "images": [
+        {
+          "src": "images/events/holiday-parade-2022/01.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/01.jpg",
+          "alt": "holiday parade 2022 photo 1",
+          "original": "11497A9F-F5A2-4666-BDDA-1B414FCFAE5C.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/02.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/02.jpg",
+          "alt": "holiday parade 2022 photo 2",
+          "original": "IMG_1021.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/03.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/03.jpg",
+          "alt": "holiday parade 2022 photo 3",
+          "original": "IMG_1036.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/04.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/04.jpg",
+          "alt": "holiday parade 2022 photo 4",
+          "original": "IMG_1044.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/05.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/05.jpg",
+          "alt": "holiday parade 2022 photo 5",
+          "original": "IMG_2383.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/06.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/06.jpg",
+          "alt": "holiday parade 2022 photo 6",
+          "original": "IMG_3401.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/07.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/07.jpg",
+          "alt": "holiday parade 2022 photo 7",
+          "original": "IMG_3413.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/08.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/08.jpg",
+          "alt": "holiday parade 2022 photo 8",
+          "original": "IMG_5386.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/09.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/09.jpg",
+          "alt": "holiday parade 2022 photo 9",
+          "original": "IMG_5433.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/10.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/10.jpg",
+          "alt": "holiday parade 2022 photo 10",
+          "original": "IMG_5444.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/11.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/11.jpg",
+          "alt": "holiday parade 2022 photo 11",
+          "original": "IMG_5454.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/12.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/12.jpg",
+          "alt": "holiday parade 2022 photo 12",
+          "original": "IMG_6252.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/13.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/13.jpg",
+          "alt": "holiday parade 2022 photo 13",
+          "original": "IMG_6254.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/14.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/14.jpg",
+          "alt": "holiday parade 2022 photo 14",
+          "original": "IMG_6257.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/15.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/15.jpg",
+          "alt": "holiday parade 2022 photo 15",
+          "original": "IMG_6259.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/16.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/16.jpg",
+          "alt": "holiday parade 2022 photo 16",
+          "original": "IMG_6261.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/17.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/17.jpg",
+          "alt": "holiday parade 2022 photo 17",
+          "original": "IMG_6264.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/18.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/18.jpg",
+          "alt": "holiday parade 2022 photo 18",
+          "original": "IMG_6266.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/19.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/19.jpg",
+          "alt": "holiday parade 2022 photo 19",
+          "original": "IMG_6268.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/20.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/20.jpg",
+          "alt": "holiday parade 2022 photo 20",
+          "original": "IMG_6271.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/21.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/21.jpg",
+          "alt": "holiday parade 2022 photo 21",
+          "original": "IMG_6273.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/22.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/22.jpg",
+          "alt": "holiday parade 2022 photo 22",
+          "original": "IMG_6275.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/23.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/23.jpg",
+          "alt": "holiday parade 2022 photo 23",
+          "original": "IMG_6278.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2022/24.jpg",
+          "thumb": "images/events/holiday-parade-2022/thumbs/24.jpg",
+          "alt": "holiday parade 2022 photo 24",
+          "original": "IMG_8885.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "beach-cleanup-2023",
+      "name": "1st Annual Bigfoot Bash Beach Cleanup",
+      "shortName": "Bigfoot Beach Bash 2023",
+      "type": "Beach Cleanup",
+      "date": "2023-08-27",
+      "time": "10:00",
+      "endTime": null,
+      "location": "Beacons Beach, Encinitas, then Duck Foot Tasting Room",
+      "theme": null,
+      "subhead": "Make a squatch-sized impact",
+      "summary": "Cleanup Sunday, August 27, 10 AM at Beacons Beach, then Duck Foot. Saturday the 26th was raffle prep. Moved from August 20 by the hurricane. Hats and a raffle raised $300 for United Way Maui Wildfire Relief.",
+      "body": "The 1st Annual Bigfoot Beach Bash was moved from August 20 by the hurricane and landed on the weekend of August 26–27, 2023. Saturday was raffle prep. Sunday at 10 AM the crew cleaned Beacons Beach, then headed to the Duck Foot Tasting Room for beers, Haggo’s Tacos, and friends. Hats and a raffle with prizes from Corner Pizza, Haggo’s, and Coco Pots raised $300 for United Way Maui Wildfire Relief. Thanks to Home Depot Encinitas for the buckets.",
+      "highlights": [
+        "Beacons Beach Sunday, August 27, 2023, 10 AM, then Duck Foot",
+        "Moved from August 20 by the hurricane",
+        "$300 raised for United Way Maui Wildfire Relief",
+        "Raffle prep on Saturday, August 26"
+      ],
+      "notes": [],
+      "partners": [
+        "Duck Foot Brewing Co",
+        "Haggo’s Tacos",
+        "Home Depot Encinitas",
+        "Corner Pizza",
+        "Coco Pots"
+      ],
+      "sources": [
+        "ESA-Events.md, event 12",
+        "Airtable Stories, “1st Annual Bigfoot Bash Beach Cleanup”",
+        "Photos album: ESA Beach Cleanup 2023"
+      ],
+      "album": "ESA Beach Cleanup 2023",
+      "heroImage": "images/events/beach-cleanup-2023/01.jpg",
+      "heroThumb": "images/events/beach-cleanup-2023/thumbs/01.jpg",
+      "heroFocus": "48% 23%",
+      "images": [
+        {
+          "src": "images/events/beach-cleanup-2023/01.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/01.jpg",
+          "alt": "beach cleanup 2023 photo 1",
+          "original": "IMG_0339.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/02.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/02.jpg",
+          "alt": "beach cleanup 2023 photo 2",
+          "original": "71487881795__CC114E89-79C4-4B0F-8DBF-2B466B45C3D8.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/03.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/03.jpg",
+          "alt": "beach cleanup 2023 photo 3",
+          "original": "IMG_0265.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/04.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/04.jpg",
+          "alt": "beach cleanup 2023 photo 4",
+          "original": "IMG_0273.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/05.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/05.jpg",
+          "alt": "beach cleanup 2023 photo 5",
+          "original": "IMG_0277.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/06.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/06.jpg",
+          "alt": "beach cleanup 2023 photo 6",
+          "original": "IMG_0280.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/07.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/07.jpg",
+          "alt": "beach cleanup 2023 photo 7",
+          "original": "IMG_0284.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/08.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/08.jpg",
+          "alt": "beach cleanup 2023 photo 8",
+          "original": "IMG_0287.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/09.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/09.jpg",
+          "alt": "beach cleanup 2023 photo 9",
+          "original": "IMG_0290.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/10.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/10.jpg",
+          "alt": "beach cleanup 2023 photo 10",
+          "original": "IMG_0293 (1).jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/11.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/11.jpg",
+          "alt": "beach cleanup 2023 photo 11",
+          "original": "IMG_0295.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/12.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/12.jpg",
+          "alt": "beach cleanup 2023 photo 12",
+          "original": "IMG_0299 (1).jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/13.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/13.jpg",
+          "alt": "beach cleanup 2023 photo 13",
+          "original": "IMG_0302.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/14.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/14.jpg",
+          "alt": "beach cleanup 2023 photo 14",
+          "original": "IMG_0305.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/15.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/15.jpg",
+          "alt": "beach cleanup 2023 photo 15",
+          "original": "IMG_0308.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/16.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/16.jpg",
+          "alt": "beach cleanup 2023 photo 16",
+          "original": "IMG_0312.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/17.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/17.jpg",
+          "alt": "beach cleanup 2023 photo 17",
+          "original": "IMG_0315.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/18.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/18.jpg",
+          "alt": "beach cleanup 2023 photo 18",
+          "original": "IMG_0317.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/19.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/19.jpg",
+          "alt": "beach cleanup 2023 photo 19",
+          "original": "IMG_0323.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/20.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/20.jpg",
+          "alt": "beach cleanup 2023 photo 20",
+          "original": "IMG_0326.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/21.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/21.jpg",
+          "alt": "beach cleanup 2023 photo 21",
+          "original": "IMG_0342.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/22.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/22.jpg",
+          "alt": "beach cleanup 2023 photo 22",
+          "original": "IMG_0348.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/23.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/23.jpg",
+          "alt": "beach cleanup 2023 photo 23",
+          "original": "IMG_0355.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2023/24.jpg",
+          "thumb": "images/events/beach-cleanup-2023/thumbs/24.jpg",
+          "alt": "beach cleanup 2023 photo 24",
+          "original": "IMG_1244.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "holiday-parade-2023",
+      "name": "Encinitas Holiday Parade 2023",
+      "shortName": "Traditions of Encinitas",
+      "type": "Holiday Parade",
+      "date": "2023-12-02",
+      "time": "17:00",
+      "endTime": "19:30",
+      "location": "Coast Hwy 101, Encinitas (spot 40)",
+      "theme": "Traditions of Encinitas",
+      "subhead": "The little oaks",
+      "summary": "5:00 to 7:30 PM at spot 40. The city’s theme was Traditions of Encinitas; ESA’s story was the little oaks. Post-party at Duck Foot.",
+      "body": "On Saturday, December 2, 2023, from 5:00 to 7:30 PM, ESA rolled from spot 40 under the theme Traditions of Encinitas. Bigfoot loves trees, especially oak trees — some say that’s why he explored Encinitas in the first place. After the route, the crew landed at Duck Foot. Happy Holidays Encinitas.",
+      "highlights": [
+        "Theme: Traditions of Encinitas; ESA story: the little oaks",
+        "Spot 40, 5:00–7:30 PM",
+        "Post-party at Duck Foot"
+      ],
+      "notes": [],
+      "partners": [
+        "Duck Foot Brewing Co"
+      ],
+      "sources": [
+        "ESA-Events.md, event 13",
+        "Airtable Events, “2023 Encinitas Holiday Parade”",
+        "Photos album: ESA Holiday Parade 2023"
+      ],
+      "album": "ESA Holiday Parade 2023",
+      "heroImage": "images/events/holiday-parade-2023/10.jpg",
+      "heroThumb": "images/events/holiday-parade-2023/thumbs/10.jpg",
+      "heroFocus": "50% 27%",
+      "images": [
+        {
+          "src": "images/events/holiday-parade-2023/01.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/01.jpg",
+          "alt": "holiday parade 2023 photo 1",
+          "original": "IMG_1325.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/02.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/02.jpg",
+          "alt": "holiday parade 2023 photo 2",
+          "original": "IMG_1326.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/03.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/03.jpg",
+          "alt": "holiday parade 2023 photo 3",
+          "original": "IMG_1579.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/04.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/04.jpg",
+          "alt": "holiday parade 2023 photo 4",
+          "original": "IMG_1580.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/05.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/05.jpg",
+          "alt": "holiday parade 2023 photo 5",
+          "original": "IMG_1581.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/06.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/06.jpg",
+          "alt": "holiday parade 2023 photo 6",
+          "original": "IMG_1582.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/07.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/07.jpg",
+          "alt": "holiday parade 2023 photo 7",
+          "original": "IMG_1583.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/08.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/08.jpg",
+          "alt": "holiday parade 2023 photo 8",
+          "original": "IMG_1584.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/09.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/09.jpg",
+          "alt": "holiday parade 2023 photo 9",
+          "original": "IMG_3126.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/10.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/10.jpg",
+          "alt": "holiday parade 2023 photo 10",
+          "original": "IMG_4987.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/11.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/11.jpg",
+          "alt": "holiday parade 2023 photo 11",
+          "original": "IMG_4997.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/12.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/12.jpg",
+          "alt": "holiday parade 2023 photo 12",
+          "original": "IMG_5042.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/13.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/13.jpg",
+          "alt": "holiday parade 2023 photo 13",
+          "original": "IMG_5047.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/14.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/14.jpg",
+          "alt": "holiday parade 2023 photo 14",
+          "original": "IMG_5058.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/15.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/15.jpg",
+          "alt": "holiday parade 2023 photo 15",
+          "original": "IMG_5060.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/16.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/16.jpg",
+          "alt": "holiday parade 2023 photo 16",
+          "original": "IMG_5066.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/17.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/17.jpg",
+          "alt": "holiday parade 2023 photo 17",
+          "original": "IMG_5072.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/18.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/18.jpg",
+          "alt": "holiday parade 2023 photo 18",
+          "original": "IMG_7729.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2023/19.jpg",
+          "thumb": "images/events/holiday-parade-2023/thumbs/19.jpg",
+          "alt": "holiday parade 2023 photo 19",
+          "original": "IMG_7730.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "care-fair-2024",
+      "name": "Care Fair 2024",
+      "shortName": "I party with Bigfoot",
+      "type": "Care Fair",
+      "date": "2024-03-10",
+      "time": null,
+      "endTime": null,
+      "location": "San Elijo Hills Community Park",
+      "theme": null,
+      "subhead": "I party with Bigfoot",
+      "summary": "An ESA tent at the Care Fair in San Elijo Hills Community Park — hats, smiles, and “I party with Bigfoot.” This one was not on the older public timeline.",
+      "body": "On Sunday, March 10, 2024, ESA set up a tent at the Care Fair in San Elijo Hills Community Park. The album is hats, the booth, and “I party with Bigfoot” — a daytime gathering, not a parade, and one that had not made it onto the earlier public timeline page.",
+      "highlights": [
+        "ESA tent, hats, and “I party with Bigfoot”",
+        "Sunday, March 10, 2024, San Elijo Hills Community Park"
+      ],
+      "notes": [
+        "Not on the earlier public timeline page."
+      ],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 14",
+        "Photos album: ESA Care Fair 2024"
+      ],
+      "album": "ESA Care Fair 2024",
+      "heroImage": "images/events/care-fair-2024/01.jpg",
+      "heroThumb": "images/events/care-fair-2024/thumbs/01.jpg",
+      "heroFocus": "50% 9%",
+      "images": [
+        {
+          "src": "images/events/care-fair-2024/01.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/01.jpg",
+          "alt": "care fair 2024 photo 1",
+          "original": "IMG_3138.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/02.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/02.jpg",
+          "alt": "care fair 2024 photo 2",
+          "original": "IMG_2757.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/03.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/03.jpg",
+          "alt": "care fair 2024 photo 3",
+          "original": "IMG_2758.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/04.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/04.jpg",
+          "alt": "care fair 2024 photo 4",
+          "original": "IMG_2761.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/05.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/05.jpg",
+          "alt": "care fair 2024 photo 5",
+          "original": "IMG_2762.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/06.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/06.jpg",
+          "alt": "care fair 2024 photo 6",
+          "original": "IMG_2763.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/07.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/07.jpg",
+          "alt": "care fair 2024 photo 7",
+          "original": "IMG_2764.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/08.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/08.jpg",
+          "alt": "care fair 2024 photo 8",
+          "original": "IMG_2766.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/09.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/09.jpg",
+          "alt": "care fair 2024 photo 9",
+          "original": "IMG_2767.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/10.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/10.jpg",
+          "alt": "care fair 2024 photo 10",
+          "original": "IMG_2769.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/11.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/11.jpg",
+          "alt": "care fair 2024 photo 11",
+          "original": "IMG_2770.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/12.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/12.jpg",
+          "alt": "care fair 2024 photo 12",
+          "original": "IMG_2772.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/13.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/13.jpg",
+          "alt": "care fair 2024 photo 13",
+          "original": "IMG_2773.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/14.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/14.jpg",
+          "alt": "care fair 2024 photo 14",
+          "original": "IMG_2774.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/15.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/15.jpg",
+          "alt": "care fair 2024 photo 15",
+          "original": "IMG_2775.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/16.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/16.jpg",
+          "alt": "care fair 2024 photo 16",
+          "original": "IMG_2777.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/17.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/17.jpg",
+          "alt": "care fair 2024 photo 17",
+          "original": "IMG_2778.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/18.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/18.jpg",
+          "alt": "care fair 2024 photo 18",
+          "original": "IMG_2779.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/19.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/19.jpg",
+          "alt": "care fair 2024 photo 19",
+          "original": "IMG_3123.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/20.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/20.jpg",
+          "alt": "care fair 2024 photo 20",
+          "original": "IMG_3126.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/21.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/21.jpg",
+          "alt": "care fair 2024 photo 21",
+          "original": "IMG_3129.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/22.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/22.jpg",
+          "alt": "care fair 2024 photo 22",
+          "original": "IMG_3135.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/23.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/23.jpg",
+          "alt": "care fair 2024 photo 23",
+          "original": "IMG_3136.jpeg"
+        },
+        {
+          "src": "images/events/care-fair-2024/24.jpg",
+          "thumb": "images/events/care-fair-2024/thumbs/24.jpg",
+          "alt": "care fair 2024 photo 24",
+          "original": "IMG_8255.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "pride-2024",
+      "name": "San Diego Pride 2024",
+      "shortName": "Making History Now",
+      "type": "Pride",
+      "date": "2024-07-20",
+      "time": "10:00",
+      "endTime": null,
+      "location": "San Diego Pride Parade, San Diego (spot 252, blue staging area)",
+      "theme": "Making History Now",
+      "subhead": "Footprints of love and kindness",
+      "summary": "ESA’s second Pride. 10 AM step-off from the blue staging area, spot 252, leaving footprints of love and kindness.",
+      "body": "Saturday, July 20, 2024, was ESA’s second San Diego Pride. Step-off was 10 AM from the blue staging area at spot 252, under the parade’s “Making History Now” theme. Bigfoot leaves footprints of love and kindness for everyone — and this year the association showed up to walk that message with friends.",
+      "highlights": [
+        "ESA’s second Pride",
+        "Theme: Making History Now",
+        "10:00 AM step-off, blue staging area, spot 252"
+      ],
+      "notes": [],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 15",
+        "Airtable Events, “2024 San Diego Pride Parade”",
+        "Photos album: ESA Pride Parade 2024"
+      ],
+      "album": "ESA Pride Parade 2024",
+      "heroImage": "images/events/pride-2024/01.jpg",
+      "heroThumb": "images/events/pride-2024/thumbs/01.jpg",
+      "heroFocus": "50% 45%",
+      "images": [
+        {
+          "src": "images/events/pride-2024/01.jpg",
+          "thumb": "images/events/pride-2024/thumbs/01.jpg",
+          "alt": "pride 2024 photo 1",
+          "original": "IMG_5584.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/02.jpg",
+          "thumb": "images/events/pride-2024/thumbs/02.jpg",
+          "alt": "pride 2024 photo 2",
+          "original": "IMG_5570.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/03.jpg",
+          "thumb": "images/events/pride-2024/thumbs/03.jpg",
+          "alt": "pride 2024 photo 3",
+          "original": "IMG_5573.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/04.jpg",
+          "thumb": "images/events/pride-2024/thumbs/04.jpg",
+          "alt": "pride 2024 photo 4",
+          "original": "IMG_5575.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/05.jpg",
+          "thumb": "images/events/pride-2024/thumbs/05.jpg",
+          "alt": "pride 2024 photo 5",
+          "original": "IMG_5578.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/06.jpg",
+          "thumb": "images/events/pride-2024/thumbs/06.jpg",
+          "alt": "pride 2024 photo 6",
+          "original": "IMG_5580.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/07.jpg",
+          "thumb": "images/events/pride-2024/thumbs/07.jpg",
+          "alt": "pride 2024 photo 7",
+          "original": "IMG_5583.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/08.jpg",
+          "thumb": "images/events/pride-2024/thumbs/08.jpg",
+          "alt": "pride 2024 photo 8",
+          "original": "IMG_5585.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/09.jpg",
+          "thumb": "images/events/pride-2024/thumbs/09.jpg",
+          "alt": "pride 2024 photo 9",
+          "original": "IMG_5588.jpg"
+        },
+        {
+          "src": "images/events/pride-2024/10.jpg",
+          "thumb": "images/events/pride-2024/thumbs/10.jpg",
+          "alt": "pride 2024 photo 10",
+          "original": "IMG_5591.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/11.jpg",
+          "thumb": "images/events/pride-2024/thumbs/11.jpg",
+          "alt": "pride 2024 photo 11",
+          "original": "IMG_5593.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/12.jpg",
+          "thumb": "images/events/pride-2024/thumbs/12.jpg",
+          "alt": "pride 2024 photo 12",
+          "original": "IMG_5596.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/13.jpg",
+          "thumb": "images/events/pride-2024/thumbs/13.jpg",
+          "alt": "pride 2024 photo 13",
+          "original": "IMG_5599.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/14.jpg",
+          "thumb": "images/events/pride-2024/thumbs/14.jpg",
+          "alt": "pride 2024 photo 14",
+          "original": "IMG_5602.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/15.jpg",
+          "thumb": "images/events/pride-2024/thumbs/15.jpg",
+          "alt": "pride 2024 photo 15",
+          "original": "IMG_5606.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/16.jpg",
+          "thumb": "images/events/pride-2024/thumbs/16.jpg",
+          "alt": "pride 2024 photo 16",
+          "original": "IMG_5609.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/17.jpg",
+          "thumb": "images/events/pride-2024/thumbs/17.jpg",
+          "alt": "pride 2024 photo 17",
+          "original": "IMG_5611.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/18.jpg",
+          "thumb": "images/events/pride-2024/thumbs/18.jpg",
+          "alt": "pride 2024 photo 18",
+          "original": "IMG_5614.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/19.jpg",
+          "thumb": "images/events/pride-2024/thumbs/19.jpg",
+          "alt": "pride 2024 photo 19",
+          "original": "IMG_5621.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/20.jpg",
+          "thumb": "images/events/pride-2024/thumbs/20.jpg",
+          "alt": "pride 2024 photo 20",
+          "original": "IMG_5623.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/21.jpg",
+          "thumb": "images/events/pride-2024/thumbs/21.jpg",
+          "alt": "pride 2024 photo 21",
+          "original": "IMG_5628.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/22.jpg",
+          "thumb": "images/events/pride-2024/thumbs/22.jpg",
+          "alt": "pride 2024 photo 22",
+          "original": "IMG_5632.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/23.jpg",
+          "thumb": "images/events/pride-2024/thumbs/23.jpg",
+          "alt": "pride 2024 photo 23",
+          "original": "IMG_5637.jpeg"
+        },
+        {
+          "src": "images/events/pride-2024/24.jpg",
+          "thumb": "images/events/pride-2024/thumbs/24.jpg",
+          "alt": "pride 2024 photo 24",
+          "original": "IMG_5642.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "beach-cleanup-2024",
+      "name": "2nd Annual Bigfoot Beach Bash",
+      "shortName": "Beach Bash 2024",
+      "type": "Beach Cleanup",
+      "date": "2024-09-01",
+      "time": "10:00",
+      "endTime": null,
+      "location": "Beacons Beach, Leucadia, then Duck Foot Tasting Room",
+      "theme": null,
+      "subhead": "Bigfoot loves a clean beach",
+      "summary": "Second year in a row: 10 AM at Beacons Beach with Duck Foot, then an after-party at the tasting room from noon to 3 PM.",
+      "body": "On Sunday, September 1, 2024, the Encinitas Sasquatch Association teamed up with Duck Foot again to clean Beacons Beach in Leucadia, starting at 10 AM. After the rakes and buckets, the after-party ran at Duck Foot from noon to 3 PM. Bigfoot loves Encinitas. Bigfoot also loves a clean beach.",
+      "highlights": [
+        "10 AM at Beacons Beach, then Duck Foot",
+        "After-party noon to 3 PM",
+        "Second year of the Beach Bash"
+      ],
+      "notes": [],
+      "partners": [
+        "Duck Foot Brewing Co"
+      ],
+      "sources": [
+        "ESA-Events.md, event 16",
+        "Airtable Events, “2nd Annual Bigfoot Beach Beach Bash”",
+        "Photos album: ESA Beach Cleanup 2024"
+      ],
+      "album": "ESA Beach Cleanup 2024",
+      "heroImage": "images/events/beach-cleanup-2024/08.jpg",
+      "heroThumb": "images/events/beach-cleanup-2024/thumbs/08.jpg",
+      "heroFocus": "50% 55%",
+      "images": [
+        {
+          "src": "images/events/beach-cleanup-2024/01.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/01.jpg",
+          "alt": "beach cleanup 2024 photo 1",
+          "original": "IMG_6729.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/02.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/02.jpg",
+          "alt": "beach cleanup 2024 photo 2",
+          "original": "IMG_6734.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/03.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/03.jpg",
+          "alt": "beach cleanup 2024 photo 3",
+          "original": "IMG_6739.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/04.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/04.jpg",
+          "alt": "beach cleanup 2024 photo 4",
+          "original": "IMG_6744.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/05.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/05.jpg",
+          "alt": "beach cleanup 2024 photo 5",
+          "original": "IMG_6748.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/06.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/06.jpg",
+          "alt": "beach cleanup 2024 photo 6",
+          "original": "IMG_6753.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/07.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/07.jpg",
+          "alt": "beach cleanup 2024 photo 7",
+          "original": "IMG_6758.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/08.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/08.jpg",
+          "alt": "beach cleanup 2024 photo 8",
+          "original": "IMG_6763.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/09.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/09.jpg",
+          "alt": "beach cleanup 2024 photo 9",
+          "original": "IMG_6767.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/10.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/10.jpg",
+          "alt": "beach cleanup 2024 photo 10",
+          "original": "IMG_6772.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/11.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/11.jpg",
+          "alt": "beach cleanup 2024 photo 11",
+          "original": "IMG_6776.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/12.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/12.jpg",
+          "alt": "beach cleanup 2024 photo 12",
+          "original": "IMG_6781.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/13.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/13.jpg",
+          "alt": "beach cleanup 2024 photo 13",
+          "original": "IMG_6785.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/14.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/14.jpg",
+          "alt": "beach cleanup 2024 photo 14",
+          "original": "IMG_6790.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/15.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/15.jpg",
+          "alt": "beach cleanup 2024 photo 15",
+          "original": "IMG_6794.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/16.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/16.jpg",
+          "alt": "beach cleanup 2024 photo 16",
+          "original": "IMG_6799.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/17.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/17.jpg",
+          "alt": "beach cleanup 2024 photo 17",
+          "original": "IMG_6803.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/18.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/18.jpg",
+          "alt": "beach cleanup 2024 photo 18",
+          "original": "IMG_6808.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/19.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/19.jpg",
+          "alt": "beach cleanup 2024 photo 19",
+          "original": "IMG_6812.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/20.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/20.jpg",
+          "alt": "beach cleanup 2024 photo 20",
+          "original": "IMG_6817.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/21.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/21.jpg",
+          "alt": "beach cleanup 2024 photo 21",
+          "original": "IMG_6821.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/22.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/22.jpg",
+          "alt": "beach cleanup 2024 photo 22",
+          "original": "IMG_6826.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/23.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/23.jpg",
+          "alt": "beach cleanup 2024 photo 23",
+          "original": "IMG_6830.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2024/24.jpg",
+          "thumb": "images/events/beach-cleanup-2024/thumbs/24.jpg",
+          "alt": "beach cleanup 2024 photo 24",
+          "original": "IMG_6835.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "holiday-parade-2024",
+      "name": "Encinitas Holiday Parade 2024",
+      "shortName": "Creativity in Motion",
+      "type": "Holiday Parade",
+      "date": "2024-12-07",
+      "time": "17:30",
+      "endTime": null,
+      "location": "Coast Hwy 101, Encinitas (spot 85, Red Zone near 2nd and G)",
+      "theme": "Creativity in Motion / Get Quantum",
+      "subhead": "Get Quantum",
+      "summary": "5:30 PM at spot 85, Red Zone near 2nd and G. The city’s theme was Creativity in Motion; ESA went quantum and cosmic. This is the thinnest parade album — only 10 of that day’s 55 items.",
+      "body": "On Saturday, December 7, 2024, at 5:30 PM, ESA lined up at spot 85 in the Red Zone near 2nd and G. The city’s theme was Creativity in Motion; ESA invited Encinitas to get quantum and shine in a cosmic state, with Bigfoot as a visitor among friends. This album is the thinnest parade set in the library: only 10 of that day’s 55 items made the time window, so the gallery is short on purpose.",
+      "highlights": [
+        "Theme: Creativity in Motion / Get Quantum",
+        "Spot 85, Red Zone near 2nd and G, 5:30 PM"
+      ],
+      "notes": [
+        "Thinnest album: only 10 of that day’s 55 items (5 of them videos). 45 shots from the same day were left outside the window and have not been reviewed into the album."
+      ],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 17",
+        "Airtable Events, “2024 Encinitas Holiday Parade”",
+        "Photos album: ESA Holiday Parade 2024"
+      ],
+      "album": "ESA Holiday Parade 2024",
+      "heroImage": "images/events/holiday-parade-2024/02.jpg",
+      "heroThumb": "images/events/holiday-parade-2024/thumbs/02.jpg",
+      "heroFocus": "50% 32%",
+      "images": [
+        {
+          "src": "images/events/holiday-parade-2024/01.jpg",
+          "thumb": "images/events/holiday-parade-2024/thumbs/01.jpg",
+          "alt": "holiday parade 2024 photo 1",
+          "original": "IMG_3723.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2024/02.jpg",
+          "thumb": "images/events/holiday-parade-2024/thumbs/02.jpg",
+          "alt": "holiday parade 2024 photo 2",
+          "original": "IMG_3724.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2024/03.jpg",
+          "thumb": "images/events/holiday-parade-2024/thumbs/03.jpg",
+          "alt": "holiday parade 2024 photo 3",
+          "original": "IMG_6879.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2024/04.jpg",
+          "thumb": "images/events/holiday-parade-2024/thumbs/04.jpg",
+          "alt": "holiday parade 2024 photo 4",
+          "original": "IMG_6880.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2024/05.jpg",
+          "thumb": "images/events/holiday-parade-2024/thumbs/05.jpg",
+          "alt": "holiday parade 2024 photo 5",
+          "original": "IMG_9546.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "la-fire-relief-2025",
+      "name": "Let's Help LA: fire relief at Duck Foot",
+      "shortName": "Help LA",
+      "type": "Fundraiser",
+      "date": "2025-01-15",
+      "time": "17:00",
+      "endTime": null,
+      "location": "Duck Foot Tasting Room, Leucadia",
+      "theme": null,
+      "subhead": "Neighbors helping neighbors",
+      "summary": "From 5 PM at Duck Foot in Leucadia: a supply and fund drive, $1 per pint and all bingo donations to LA fire victims, with the ESA banner, a donation pile, and bingo.",
+      "body": "On Wednesday, January 15, 2025, starting at 5 PM, ESA gathered at Duck Foot in Leucadia for Let’s Help LA — a supply and fund drive for fire victims. A dollar from each pint and all bingo donations went to relief. The album is the ESA banner, the donation pile, and a room full of people showing up for neighbors.",
+      "highlights": [
+        "Wednesday, January 15, 2025, from 5 PM at Duck Foot, Leucadia",
+        "$1 per pint and all bingo donations to LA fire victims"
+      ],
+      "notes": [],
+      "partners": [
+        "Duck Foot Brewing Co"
+      ],
+      "sources": [
+        "ESA-Events.md, event 18",
+        "Email review of the January 15, 2025 gathering",
+        "Photos album: ESA LA Fire Relief 2025"
+      ],
+      "album": "ESA LA Fire Relief 2025",
+      "heroImage": "images/events/la-fire-relief-2025/16.jpg",
+      "heroThumb": "images/events/la-fire-relief-2025/thumbs/16.jpg",
+      "heroFocus": "48% 9%",
+      "images": [
+        {
+          "src": "images/events/la-fire-relief-2025/01.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/01.jpg",
+          "alt": "la fire relief 2025 photo 1",
+          "original": "IMG_0581.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/02.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/02.jpg",
+          "alt": "la fire relief 2025 photo 2",
+          "original": "IMG_0582.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/03.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/03.jpg",
+          "alt": "la fire relief 2025 photo 3",
+          "original": "IMG_0584.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/04.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/04.jpg",
+          "alt": "la fire relief 2025 photo 4",
+          "original": "IMG_0585.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/05.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/05.jpg",
+          "alt": "la fire relief 2025 photo 5",
+          "original": "IMG_0587.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/06.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/06.jpg",
+          "alt": "la fire relief 2025 photo 6",
+          "original": "IMG_0588.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/07.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/07.jpg",
+          "alt": "la fire relief 2025 photo 7",
+          "original": "IMG_0590.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/08.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/08.jpg",
+          "alt": "la fire relief 2025 photo 8",
+          "original": "IMG_0591.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/09.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/09.jpg",
+          "alt": "la fire relief 2025 photo 9",
+          "original": "IMG_2935.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/10.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/10.jpg",
+          "alt": "la fire relief 2025 photo 10",
+          "original": "IMG_4540.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/11.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/11.jpg",
+          "alt": "la fire relief 2025 photo 11",
+          "original": "IMG_4541.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/12.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/12.jpg",
+          "alt": "la fire relief 2025 photo 12",
+          "original": "IMG_4548.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/13.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/13.jpg",
+          "alt": "la fire relief 2025 photo 13",
+          "original": "IMG_4559.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/14.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/14.jpg",
+          "alt": "la fire relief 2025 photo 14",
+          "original": "IMG_8247.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/15.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/15.jpg",
+          "alt": "la fire relief 2025 photo 15",
+          "original": "IMG_8248.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/16.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/16.jpg",
+          "alt": "la fire relief 2025 photo 16",
+          "original": "IMG_8253.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/17.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/17.jpg",
+          "alt": "la fire relief 2025 photo 17",
+          "original": "IMG_8257.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/18.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/18.jpg",
+          "alt": "la fire relief 2025 photo 18",
+          "original": "IMG_8258.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/19.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/19.jpg",
+          "alt": "la fire relief 2025 photo 19",
+          "original": "IMG_8268.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/20.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/20.jpg",
+          "alt": "la fire relief 2025 photo 20",
+          "original": "IMG_8269.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/21.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/21.jpg",
+          "alt": "la fire relief 2025 photo 21",
+          "original": "IMG_8271.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/22.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/22.jpg",
+          "alt": "la fire relief 2025 photo 22",
+          "original": "IMG_8274.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/23.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/23.jpg",
+          "alt": "la fire relief 2025 photo 23",
+          "original": "IMG_8281.jpeg"
+        },
+        {
+          "src": "images/events/la-fire-relief-2025/24.jpg",
+          "thumb": "images/events/la-fire-relief-2025/thumbs/24.jpg",
+          "alt": "la fire relief 2025 photo 24",
+          "original": "IMG_8283.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "pride-2025",
+      "name": "San Diego Pride 2025",
+      "shortName": "Third Pride",
+      "type": "Pride",
+      "date": "2025-07-19",
+      "time": null,
+      "endTime": null,
+      "location": "San Diego Pride Parade, San Diego",
+      "theme": null,
+      "subhead": "The banner and the Jeep",
+      "summary": "ESA’s third Pride: the association’s banner and a Jeep, Saturday, July 19, 2025. This one had been missing from the older public timeline.",
+      "body": "On Saturday, July 19, 2025, the Encinitas Sasquatch Association went to San Diego Pride for a third time. The Photos album — the largest event set in the library — shows the ESA banner and a Jeep among the day’s footprints of love and kindness. This Pride had not yet been added to the older public timeline page.",
+      "highlights": [
+        "ESA’s third Pride",
+        "ESA banner and Jeep",
+        "Saturday, July 19, 2025"
+      ],
+      "notes": [
+        "Missing from the earlier public timeline page. Largest album in the ESA folder (209 items, 28 of them videos)."
+      ],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 19",
+        "Photos album: ESA Pride Parade 2025"
+      ],
+      "album": "ESA Pride Parade 2025",
+      "heroImage": "images/events/pride-2025/01.jpg",
+      "heroThumb": "images/events/pride-2025/thumbs/01.jpg",
+      "heroFocus": "50% 40%",
+      "images": [
+        {
+          "src": "images/events/pride-2025/01.jpg",
+          "thumb": "images/events/pride-2025/thumbs/01.jpg",
+          "alt": "pride 2025 photo 1",
+          "original": "IMG_5242.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/02.jpg",
+          "thumb": "images/events/pride-2025/thumbs/02.jpg",
+          "alt": "pride 2025 photo 2",
+          "original": "183940D4-EF7C-4FD2-A2EE-684D0B39B636.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/03.jpg",
+          "thumb": "images/events/pride-2025/thumbs/03.jpg",
+          "alt": "pride 2025 photo 3",
+          "original": "IMG_4922.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/04.jpg",
+          "thumb": "images/events/pride-2025/thumbs/04.jpg",
+          "alt": "pride 2025 photo 4",
+          "original": "IMG_4955.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/05.jpg",
+          "thumb": "images/events/pride-2025/thumbs/05.jpg",
+          "alt": "pride 2025 photo 5",
+          "original": "IMG_4972.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/06.jpg",
+          "thumb": "images/events/pride-2025/thumbs/06.jpg",
+          "alt": "pride 2025 photo 6",
+          "original": "IMG_4982.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/07.jpg",
+          "thumb": "images/events/pride-2025/thumbs/07.jpg",
+          "alt": "pride 2025 photo 7",
+          "original": "IMG_4989.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/08.jpg",
+          "thumb": "images/events/pride-2025/thumbs/08.jpg",
+          "alt": "pride 2025 photo 8",
+          "original": "IMG_5001.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/09.jpg",
+          "thumb": "images/events/pride-2025/thumbs/09.jpg",
+          "alt": "pride 2025 photo 9",
+          "original": "IMG_5011.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/10.jpg",
+          "thumb": "images/events/pride-2025/thumbs/10.jpg",
+          "alt": "pride 2025 photo 10",
+          "original": "IMG_5019.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/11.jpg",
+          "thumb": "images/events/pride-2025/thumbs/11.jpg",
+          "alt": "pride 2025 photo 11",
+          "original": "IMG_5032.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/12.jpg",
+          "thumb": "images/events/pride-2025/thumbs/12.jpg",
+          "alt": "pride 2025 photo 12",
+          "original": "IMG_5048.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/13.jpg",
+          "thumb": "images/events/pride-2025/thumbs/13.jpg",
+          "alt": "pride 2025 photo 13",
+          "original": "IMG_5062.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/14.jpg",
+          "thumb": "images/events/pride-2025/thumbs/14.jpg",
+          "alt": "pride 2025 photo 14",
+          "original": "IMG_5080.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/15.jpg",
+          "thumb": "images/events/pride-2025/thumbs/15.jpg",
+          "alt": "pride 2025 photo 15",
+          "original": "IMG_5109.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/16.jpg",
+          "thumb": "images/events/pride-2025/thumbs/16.jpg",
+          "alt": "pride 2025 photo 16",
+          "original": "IMG_5122.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/17.jpg",
+          "thumb": "images/events/pride-2025/thumbs/17.jpg",
+          "alt": "pride 2025 photo 17",
+          "original": "IMG_5136.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/18.jpg",
+          "thumb": "images/events/pride-2025/thumbs/18.jpg",
+          "alt": "pride 2025 photo 18",
+          "original": "IMG_5145.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/19.jpg",
+          "thumb": "images/events/pride-2025/thumbs/19.jpg",
+          "alt": "pride 2025 photo 19",
+          "original": "IMG_5154.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/20.jpg",
+          "thumb": "images/events/pride-2025/thumbs/20.jpg",
+          "alt": "pride 2025 photo 20",
+          "original": "IMG_5165.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/21.jpg",
+          "thumb": "images/events/pride-2025/thumbs/21.jpg",
+          "alt": "pride 2025 photo 21",
+          "original": "IMG_5180.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/22.jpg",
+          "thumb": "images/events/pride-2025/thumbs/22.jpg",
+          "alt": "pride 2025 photo 22",
+          "original": "IMG_5230.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/23.jpg",
+          "thumb": "images/events/pride-2025/thumbs/23.jpg",
+          "alt": "pride 2025 photo 23",
+          "original": "IMG_5238.jpeg"
+        },
+        {
+          "src": "images/events/pride-2025/24.jpg",
+          "thumb": "images/events/pride-2025/thumbs/24.jpg",
+          "alt": "pride 2025 photo 24",
+          "original": "IMG_5248.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "holiday-parade-2025",
+      "name": "Encinitas Holiday Parade 2025",
+      "shortName": "Holiday Parade 2025",
+      "type": "Holiday Parade",
+      "date": "2025-12-06",
+      "time": "17:30",
+      "endTime": "20:30",
+      "location": "Coast Hwy 101, Encinitas (spot 43, green corner of 2nd and F)",
+      "theme": null,
+      "subhead": "A favorite stop on the migration south",
+      "summary": "Back on Coast Hwy 101 from 5:30 to 8:30 PM at spot 43, the green corner of 2nd and F.",
+      "body": "On Saturday, December 6, 2025, the Encinitas Sasquatch Association was back on Coast Highway 101 from 5:30 to 8:30 PM, at spot 43 — the green corner of 2nd and F. Another holiday night of floats, friends, and Bigfoot’s favorite stop on the migration south. This is one of the largest parade albums in the library.",
+      "highlights": [
+        "Spot 43, green corner of 2nd and F",
+        "5:30–8:30 PM on Coast Hwy 101"
+      ],
+      "notes": [
+        "87 morning shots from that day (8:19–11:28 AM) were left outside the window and have not been reviewed into the album."
+      ],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 20",
+        "Email review: Saturday, December 6, 2025, 5:30–8:30 PM, spot 43",
+        "Photos album: ESA Holiday Parade 2025"
+      ],
+      "album": "ESA Holiday Parade 2025",
+      "heroImage": "images/events/holiday-parade-2025/01.jpg",
+      "heroThumb": "images/events/holiday-parade-2025/thumbs/01.jpg",
+      "heroFocus": "52% 58%",
+      "images": [
+        {
+          "src": "images/events/holiday-parade-2025/01.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/01.jpg",
+          "alt": "holiday parade 2025 photo 1",
+          "original": "IMG_6658.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/02.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/02.jpg",
+          "alt": "holiday parade 2025 photo 2",
+          "original": "FullSizeRender.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/03.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/03.jpg",
+          "alt": "holiday parade 2025 photo 3",
+          "original": "IMG_1983.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/04.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/04.jpg",
+          "alt": "holiday parade 2025 photo 4",
+          "original": "IMG_1989.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/05.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/05.jpg",
+          "alt": "holiday parade 2025 photo 5",
+          "original": "IMG_1994.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/06.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/06.jpg",
+          "alt": "holiday parade 2025 photo 6",
+          "original": "IMG_2001.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/07.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/07.jpg",
+          "alt": "holiday parade 2025 photo 7",
+          "original": "IMG_3950.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/08.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/08.jpg",
+          "alt": "holiday parade 2025 photo 8",
+          "original": "IMG_3957.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/09.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/09.jpg",
+          "alt": "holiday parade 2025 photo 9",
+          "original": "IMG_4332.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/10.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/10.jpg",
+          "alt": "holiday parade 2025 photo 10",
+          "original": "IMG_4341.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/11.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/11.jpg",
+          "alt": "holiday parade 2025 photo 11",
+          "original": "IMG_6622.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/12.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/12.jpg",
+          "alt": "holiday parade 2025 photo 12",
+          "original": "IMG_6630.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/13.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/13.jpg",
+          "alt": "holiday parade 2025 photo 13",
+          "original": "IMG_6635.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/14.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/14.jpg",
+          "alt": "holiday parade 2025 photo 14",
+          "original": "IMG_6644.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/15.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/15.jpg",
+          "alt": "holiday parade 2025 photo 15",
+          "original": "IMG_6650.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/16.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/16.jpg",
+          "alt": "holiday parade 2025 photo 16",
+          "original": "IMG_6657.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/17.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/17.jpg",
+          "alt": "holiday parade 2025 photo 17",
+          "original": "IMG_6663.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/18.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/18.jpg",
+          "alt": "holiday parade 2025 photo 18",
+          "original": "IMG_6677.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/19.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/19.jpg",
+          "alt": "holiday parade 2025 photo 19",
+          "original": "IMG_6685.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/20.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/20.jpg",
+          "alt": "holiday parade 2025 photo 20",
+          "original": "IMG_6697.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/21.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/21.jpg",
+          "alt": "holiday parade 2025 photo 21",
+          "original": "IMG_6706.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/22.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/22.jpg",
+          "alt": "holiday parade 2025 photo 22",
+          "original": "IMG_6714.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/23.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/23.jpg",
+          "alt": "holiday parade 2025 photo 23",
+          "original": "IMG_6722.jpeg"
+        },
+        {
+          "src": "images/events/holiday-parade-2025/24.jpg",
+          "thumb": "images/events/holiday-parade-2025/thumbs/24.jpg",
+          "alt": "holiday parade 2025 photo 24",
+          "original": "IMG_7453.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "beach-cleanup-2026",
+      "name": "ESA / Duck Foot Beach Cleanup 2026",
+      "shortName": "Beach Bash 2026",
+      "type": "Beach Cleanup",
+      "date": "2026-06-28",
+      "time": "10:30",
+      "endTime": null,
+      "location": "Beacons Beach, Encinitas, then Duck Foot Tasting Room, Leucadia",
+      "theme": null,
+      "subhead": "Sunscreen, buckets, and a clean beach",
+      "summary": "10:30 AM at Beacons Beach with Duck Foot, Sun Bum, and Un Mar de Colores, then an after-party at Duck Foot Leucadia.",
+      "body": "On Sunday, June 28, 2026, at 10:30 AM, ESA returned to Beacons Beach with Duck Foot, Sun Bum, and Un Mar de Colores for another beach cleanup, then headed to Duck Foot in Leucadia. Sunscreen, water, a beach hat, and a willingness to keep Encinitas inviting for magical creatures big and small — still the official packing list.",
+      "highlights": [
+        "Sunday, June 28, 2026, 10:30 AM at Beacons",
+        "With Duck Foot, Sun Bum, and Un Mar de Colores",
+        "After-party at Duck Foot Leucadia"
+      ],
+      "notes": [],
+      "partners": [
+        "Duck Foot Brewing Co",
+        "Sun Bum",
+        "Un Mar de Colores"
+      ],
+      "sources": [
+        "ESA-Events.md, event 21",
+        "Email review of the June 28, 2026 cleanup",
+        "Photos album: ESA Beach Cleanup 2026"
+      ],
+      "album": "ESA Beach Cleanup 2026",
+      "heroImage": "images/events/beach-cleanup-2026/01.jpg",
+      "heroThumb": "images/events/beach-cleanup-2026/thumbs/01.jpg",
+      "heroFocus": "50% 9%",
+      "images": [
+        {
+          "src": "images/events/beach-cleanup-2026/01.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/01.jpg",
+          "alt": "beach cleanup 2026 photo 1",
+          "original": "IMG_0893.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/02.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/02.jpg",
+          "alt": "beach cleanup 2026 photo 2",
+          "original": "IMG_0871.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/03.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/03.jpg",
+          "alt": "beach cleanup 2026 photo 3",
+          "original": "IMG_0873.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/04.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/04.jpg",
+          "alt": "beach cleanup 2026 photo 4",
+          "original": "IMG_0876.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/05.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/05.jpg",
+          "alt": "beach cleanup 2026 photo 5",
+          "original": "IMG_0878.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/06.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/06.jpg",
+          "alt": "beach cleanup 2026 photo 6",
+          "original": "IMG_0884.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/07.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/07.jpg",
+          "alt": "beach cleanup 2026 photo 7",
+          "original": "IMG_0887.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/08.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/08.jpg",
+          "alt": "beach cleanup 2026 photo 8",
+          "original": "IMG_0889.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/09.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/09.jpg",
+          "alt": "beach cleanup 2026 photo 9",
+          "original": "IMG_0892.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/10.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/10.jpg",
+          "alt": "beach cleanup 2026 photo 10",
+          "original": "IMG_0894.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/11.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/11.jpg",
+          "alt": "beach cleanup 2026 photo 11",
+          "original": "IMG_0897.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/12.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/12.jpg",
+          "alt": "beach cleanup 2026 photo 12",
+          "original": "IMG_0899.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/13.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/13.jpg",
+          "alt": "beach cleanup 2026 photo 13",
+          "original": "IMG_0901.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/14.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/14.jpg",
+          "alt": "beach cleanup 2026 photo 14",
+          "original": "IMG_0904.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/15.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/15.jpg",
+          "alt": "beach cleanup 2026 photo 15",
+          "original": "IMG_0906.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/16.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/16.jpg",
+          "alt": "beach cleanup 2026 photo 16",
+          "original": "IMG_0908.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/17.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/17.jpg",
+          "alt": "beach cleanup 2026 photo 17",
+          "original": "IMG_0911.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/18.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/18.jpg",
+          "alt": "beach cleanup 2026 photo 18",
+          "original": "IMG_0913.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/19.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/19.jpg",
+          "alt": "beach cleanup 2026 photo 19",
+          "original": "IMG_0916.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/20.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/20.jpg",
+          "alt": "beach cleanup 2026 photo 20",
+          "original": "IMG_1118.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/21.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/21.jpg",
+          "alt": "beach cleanup 2026 photo 21",
+          "original": "IMG_9617.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/22.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/22.jpg",
+          "alt": "beach cleanup 2026 photo 22",
+          "original": "IMG_9621.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/23.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/23.jpg",
+          "alt": "beach cleanup 2026 photo 23",
+          "original": "IMG_9623.jpeg"
+        },
+        {
+          "src": "images/events/beach-cleanup-2026/24.jpg",
+          "thumb": "images/events/beach-cleanup-2026/thumbs/24.jpg",
+          "alt": "beach cleanup 2026 photo 24",
+          "original": "IMG_9629.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "holiday-parade-2026",
+      "name": "10th Encinitas Holiday Parade",
+      "shortName": "40 & Fabulous",
+      "type": "Holiday Parade",
+      "date": "2026-12-05",
+      "time": "17:30",
+      "endTime": null,
+      "location": "Coast Hwy 101, Encinitas",
+      "theme": "40 & Fabulous",
+      "subhead": "Ten parades, one migration",
+      "summary": "ESA’s 10th Encinitas Holiday Parade is Saturday, December 5, 2026, at 5:30 PM on Coast Hwy 101. The theme is 40 & Fabulous. Staging spot to be announced; photos will land here once they’re in the library.",
+      "body": "On Saturday, December 5, 2026, at 5:30 PM, the Encinitas Sasquatch Association rolls down Coast Highway 101 for its 10th Encinitas Holiday Parade. The theme is 40 & Fabulous — a night to celebrate Encinitas, a decade of holiday migrations, and whoever might be watching from the trees. The staging spot is still to be announced, and the Photos album has not been created yet. Want to ride, walk, wrangle giveaways, or cheer from the curb? RSVP and we’ll find you a spot.",
+      "highlights": [
+        "ESA’s 10th Holiday Parade",
+        "Theme: 40 & Fabulous",
+        "Saturday, December 5, 2026, 5:30 PM, Coast Hwy 101",
+        "Staging spot to be announced"
+      ],
+      "notes": [
+        "No Photos album yet — upcoming. Pride 2026 (July 18) is omitted: ESA did not participate; registration was denied on July 6. Pride 2023 is also omitted: there is no sign ESA took part."
+      ],
+      "partners": [],
+      "sources": [
+        "ESA-Events.md, event 23",
+        "Email review and Paper campaign boards: theme 40 & Fabulous"
+      ],
+      "album": null,
+      "heroImage": null,
+      "heroThumb": null,
+      "heroFocus": null,
+      "images": []
+    }
+  ],
+  "omitted": [
+    {
+      "name": "San Diego Pride 2023",
+      "date": "2023-07-15",
+      "reason": "Did not participate — no Photos, nothing on the timeline page."
+    },
+    {
+      "name": "San Diego Pride 2026",
+      "date": "2026-07-18",
+      "reason": "Did not participate — registration was denied on July 6, 2026."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSVP / Volunteer · Encinitas Sasquatch Association</title>
+  <meta name="description" content="RSVP for an ESA event or volunteer for the float, a beach cleanup, or whatever the trail needs next.">
+  <link rel="icon" type="image/png" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/styles.css?v=20261116v">
+    <script src="/js/events.js?v=20261116v" defer></script>
+    <script src="/js/main.js?v=20261116v" defer></script>
+    <script src="/js/config.js?v=20261116v"></script>
+    <script src="/js/forms.js?v=20261116v" defer></script>
+</head>
+<body data-page="rsvp">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="section">
+      <div class="wrap-narrow">
+        <p class="eyebrow">Show up · pitch in</p>
+        <h1>Event RSVP / volunteer</h1>
+        <p>Coming to the 10th Holiday Parade? Want a rake at Beacons? Or just raise a hand for the next thing that needs a crew? Tell us how you want to help. Name and email are required.</p>
+
+        <div id="rsvp-thanks" class="success" hidden>
+          <h2>Track recorded.</h2>
+          <p id="rsvp-thanks-message">Got it. We’ll see you in the wild.</p>
+          <p style="margin-top:16px;"><a class="btn btn-sun" href="/upcoming">Back to upcoming events</a></p>
+        </div>
+
+        <form id="rsvp-form" class="form-shell" action="/api/rsvp" method="post" novalidate>
+          <div id="rsvp-errors" class="form-error" hidden></div>
+
+          <div class="field">
+            <label for="eventSlug">Which event?</label>
+            <select id="eventSlug" name="eventSlug">
+              <option value="general">General volunteer — put me in, coach</option>
+            </select>
+            <input type="hidden" id="eventName" name="eventName" value="General volunteer">
+          </div>
+
+          <div class="field">
+            <label for="rsvp-name">Your name <span class="req">*</span></label>
+            <input type="text" id="rsvp-name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="rsvp-email">Email <span class="req">*</span></label>
+            <input type="email" id="rsvp-email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="rsvp-phone">Phone</label>
+            <input type="tel" id="rsvp-phone" name="phone" autocomplete="tel">
+          </div>
+
+          <div class="field">
+            <label>How do you want to show up?</label>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="attendance" value="attending" checked> I’m coming</label>
+              <label class="choice"><input type="radio" name="attendance" value="volunteer"> I can volunteer</label>
+              <label class="choice"><input type="radio" name="attendance" value="both"> Both — I’ll be there and I’ll help</label>
+            </div>
+          </div>
+
+          <div id="volunteer-roles" hidden>
+            <div class="field">
+              <label>What could you help with?</label>
+              <div class="choices">
+                <label class="choice"><input type="checkbox" name="volunteerRoles" value="Operations &amp; Float Setup"> Operations &amp; Float Setup</label>
+                <label class="choice"><input type="checkbox" name="volunteerRoles" value="Content &amp; Marketing"> Content &amp; Marketing</label>
+                <label class="choice"><input type="checkbox" name="volunteerRoles" value="Recruiting Members &amp; Sponsors"> Recruiting Members &amp; Sponsors</label>
+                <label class="choice"><input type="checkbox" name="volunteerRoles" value="Finding Great Events"> Finding Great Events</label>
+                <label class="choice"><input type="checkbox" name="volunteerRoles" value="Day-of crew / giveaways"> Day-of crew / giveaways</label>
+                <label class="choice"><input type="checkbox" name="volunteerRoles" value="Other"> Other</label>
+              </div>
+            </div>
+            <div class="field" id="rsvp-other-wrap" hidden>
+              <label for="volunteerRolesOther">Tell us about the “other.”</label>
+              <input type="text" id="volunteerRolesOther" name="volunteerRolesOther">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="partySize">How many humans (or reasonably disguised sasquatches)?</label>
+            <input type="number" id="partySize" name="partySize" min="1" max="40" value="1">
+          </div>
+
+          <div class="field">
+            <label for="notes">Anything else we should know?</label>
+            <textarea id="notes" name="notes" placeholder="Allergies, lima-bean opinions, costume plans…"></textarea>
+          </div>
+
+
+          <div class="hp-field" aria-hidden="true">
+            <label for="rsvp-company">Company</label>
+            <input type="text" id="rsvp-company" name="company" tabindex="-1" autocomplete="off">
+          </div>
+          <button class="btn btn-sea" type="submit">Send RSVP</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>

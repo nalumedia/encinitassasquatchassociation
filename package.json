@@ -1,0 +1,9 @@
+{
+  "name": "esa-site",
+  "private": true,
+  "description": "Encinitas Sasquatch Association website. Static build for Vercel; node server.js for local preview.",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node scripts/build-static.js"
+  }
+}
