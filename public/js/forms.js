@@ -188,6 +188,16 @@
         thanks.hidden = false;
         document.getElementById("rsvp-thanks-message").textContent =
           `Got it, ${name}. We'll see you in the wild — or in the group chat.`;
+        const thanksCount = document.getElementById("rsvp-thanks-count");
+        if (window.ESA_FESTIVE) {
+          window.ESA_FESTIVE.burst("big");
+          window.ESA_FESTIVE.bumpRsvpCount(payload.event_slug, payload.party_size || 1).then((n) => {
+            if (thanksCount && n != null && !Number.isNaN(n)) {
+              thanksCount.hidden = false;
+              thanksCount.textContent = window.ESA_FESTIVE.countLabel(n);
+            }
+          });
+        }
         thanks.scrollIntoView({ behavior: "smooth" });
       } catch (err) {
         showErrors(errBox, ["The trail went quiet. Please try again in a moment."]);

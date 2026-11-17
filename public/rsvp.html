@@ -7,11 +7,12 @@
   <meta name="description" content="RSVP for an ESA event or volunteer for the float, a beach cleanup, or whatever the trail needs next.">
   <link rel="icon" type="image/png" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/css/styles.css?v=20261116v">
-    <script src="/js/events.js?v=20261116v" defer></script>
-    <script src="/js/main.js?v=20261116v" defer></script>
-    <script src="/js/config.js?v=20261116v"></script>
-    <script src="/js/forms.js?v=20261116v" defer></script>
+  <link rel="stylesheet" href="/css/styles.css?v=20261116w">
+  <script src="/js/config.js?v=20261116w"></script>
+  <script src="/js/events.js?v=20261116w" defer></script>
+  <script src="/js/festive.js?v=20261116w" defer></script>
+  <script src="/js/main.js?v=20261116w" defer></script>
+  <script src="/js/forms.js?v=20261116w" defer></script>
 </head>
 <body data-page="rsvp">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -22,10 +23,12 @@
         <p class="eyebrow">Show up · pitch in</p>
         <h1>Event RSVP / volunteer</h1>
         <p>Coming to the 10th Holiday Parade? Want a rake at Beacons? Or just raise a hand for the next thing that needs a crew? Tell us how you want to help. Name and email are required.</p>
+        <p class="rsvp-count" id="rsvp-live-count" hidden></p>
 
         <div id="rsvp-thanks" class="success" hidden>
           <h2>Track recorded.</h2>
           <p id="rsvp-thanks-message">Got it. We’ll see you in the wild.</p>
+          <p id="rsvp-thanks-count" class="rsvp-thanks-count" hidden></p>
           <p style="margin-top:16px;"><a class="btn btn-sun" href="/upcoming">Back to upcoming events</a></p>
         </div>
 

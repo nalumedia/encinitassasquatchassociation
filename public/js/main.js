@@ -176,22 +176,56 @@
         document.getElementById("timeline-teaser") ||
         document.getElementById("timeline") ||
         document.getElementById("upcoming-list") ||
-        document.getElementById("event-page")) {
+        document.getElementById("event-page") ||
+        document.getElementById("eventSlug")) {
       ESA.loadEvents().then(hydrate).catch((err) => {
         console.error(err);
         const mounts = ["upcoming-spotlight", "timeline-teaser", "timeline", "upcoming-list", "event-page"];
         mounts.forEach((id) => {
           const el = document.getElementById(id);
-          if (el) el.innerHTML = `<p class="note">We couldn’t load events.json. Make sure you opened the site via <code>node server.js</code> at http://localhost:3000, not as a file.</p>`;
+          if (el) el.innerHTML = `<p class="note">The trail map didn’t load. Try refreshing, or come back in a moment.</p>`;
         });
       });
     }
   }
 
+
+  // Prefill the RSVP select from the URL immediately, so a submit
+  // before events.json hydrates still posts the right event slug.
+  (function prefillRsvpSlug() {
+    const select = document.getElementById("eventSlug");
+    if (!select) return;
+    const slug = (location.pathname.match(/\/rsvp\/([a-z0-9-]+)/) || [])[1]
+      || new URLSearchParams(location.search).get("event");
+    if (!slug || slug === "general") return;
+    if (![...select.options].some((o) => o.value === slug)) {
+      const opt = document.createElement("option");
+      opt.value = slug;
+      opt.textContent = slug.replace(/-/g, " ");
+      select.appendChild(opt);
+    }
+    select.value = slug;
+    const nameField = document.getElementById("eventName");
+    if (nameField) nameField.value = slug.replace(/-/g, " ");
+  })();
+
   function eventSlugFromPath() {
     const m = location.pathname.match(/\/events?\/([a-z0-9-]+)\/?$/);
     if (m) return m[1];
     return new URLSearchParams(location.search).get("slug");
+  }
+
+
+  function isParade2026(ev) {
+    return ev && ev.slug === "holiday-parade-2026";
+  }
+
+  function paradePanel(ev) {
+    if (isParade2026(ev) && window.ESA_FESTIVE) return window.ESA_FESTIVE.paradeArtHtml();
+    if (ev.heroImage || ev.heroThumb) {
+      return `<img src="${ESA.escapeHtml(ESA.imageUrl(ev.heroImage || ev.heroThumb))}" alt="${ESA.escapeHtml(ev.name)}" loading="lazy" style="${ESA.focusStyle(ev)}">`;
+    }
+    return `<div class="card-fallback"><span>${ESA.escapeHtml(ESA.fallbackLabel(ev))}</span></div>`;
   }
 
   function hydrate(data) {
@@ -200,17 +234,16 @@
     const spotlight = document.getElementById("upcoming-spotlight");
     if (spotlight) {
       if (!next) {
-        spotlight.innerHTML = `<div class="spotlight-copy"><p class="eyebrow">Upcoming</p><h2>The woods are quiet — for now.</h2><p>No dated upcoming events are in events.json. Add one and refresh.</p><a class="btn btn-sun" href="/events">Read the history</a></div>`;
+        spotlight.innerHTML = `<div class="spotlight-copy"><p class="eyebrow">Upcoming</p><h2>The woods are quiet — for now.</h2><p>No dated upcoming events are on the trail just now. Wander the history in the meantime.</p><a class="btn btn-sun" href="/events">Read the history</a></div>`;
       } else {
-        const img = (next.heroImage || next.heroThumb)
-          ? `<img src="${ESA.escapeHtml(ESA.imageUrl(next.heroImage || next.heroThumb))}" alt="${ESA.escapeHtml(next.name)}" style="${ESA.focusStyle(next)}">`
-          : `<div class="card-fallback"><span>${ESA.escapeHtml(ESA.fallbackLabel(next))}</span></div>`;
+        const img = paradePanel(next);
         spotlight.innerHTML = `
           <div class="spotlight-copy">
             <p class="eyebrow">Next up · ${ESA.escapeHtml(next.type)}</p>
             <h2>${ESA.escapeHtml(next.name)}</h2>
             <p class="meta" style="color:var(--sun);">${ESA.escapeHtml(ESA.formatDate(next))}${next.location ? " · " + ESA.escapeHtml(next.location) : ""}</p>
             <p>${ESA.escapeHtml(next.summary)}</p>
+            <p class="rsvp-count" data-rsvp-count="${ESA.escapeHtml(next.slug)}" hidden></p>
             <div class="btn-row">
               <a class="btn btn-sun" href="${ESA.eventPath(next)}">Get the details</a>
               <a class="btn btn-ghost" href="${ESA.rsvpPath(next)}" style="border-color:var(--paper);color:var(--paper) !important;">RSVP / volunteer</a>
@@ -230,7 +263,7 @@
     if (upcomingList) {
       const list = ESA.upcoming(events);
       if (!list.length) {
-        upcomingList.innerHTML = `<p>No upcoming events are currently dated in events.json. The event history is still on the <a href="/events">Event History</a> page.</p>`;
+        upcomingList.innerHTML = `<p>Nothing dated is on the trail just now. The event history is still on the <a href="/events">Event History</a> page.</p>`;
       } else {
         upcomingList.innerHTML = list.map((ev) => `
           <article class="spotlight-card" style="margin-bottom:24px;">
@@ -239,12 +272,13 @@
               <h2>${ESA.escapeHtml(ev.name)}</h2>
               <p class="meta" style="color:var(--sun);">${ESA.escapeHtml(ESA.formatDate(ev))}${ev.location ? " · " + ESA.escapeHtml(ev.location) : ""}</p>
               <p>${ESA.escapeHtml(ev.summary)}</p>
+              <p class="rsvp-count" data-rsvp-count="${ESA.escapeHtml(ev.slug)}" hidden></p>
               <div class="btn-row">
                 <a class="btn btn-sun" href="${ESA.eventPath(ev)}">Event page</a>
                 <a class="btn btn-ghost" href="${ESA.rsvpPath(ev)}" style="border-color:var(--paper);color:var(--paper) !important;">RSVP / volunteer</a>
               </div>
             </div>
-            ${(ev.heroImage || ev.heroThumb) ? `<img src="${ESA.escapeHtml(ESA.imageUrl(ev.heroImage || ev.heroThumb))}" alt="${ESA.escapeHtml(ev.name)}" loading="lazy" style="${ESA.focusStyle(ev)}">` : `<div class="card-fallback"><span>${ESA.escapeHtml(ESA.fallbackLabel(ev))}</span></div>`}
+            ${paradePanel(ev)}
           </article>`).join("");
       }
     }
@@ -345,7 +379,7 @@
               ${partners}
               ${ev.isUpcoming ? `<span class="pill pill-sun">Upcoming</span>` : `<span class="pill">Past event</span>`}
             </div>
-            ${ESA.media(ev, "hero")}
+            ${ev.slug === "holiday-parade-2026" && window.ESA_FESTIVE ? window.ESA_FESTIVE.paradeArtHtml() : ESA.media(ev, "hero")}
           </div>
         </section>
         <section class="section">
@@ -356,7 +390,8 @@
             ${notes}
           </div>
         </section>
-        ${gallery ? `<section class="section" style="padding-top:0;"><div class="wrap"><h2>From the field</h2><p class="meta">${galleryItems.length} photo${galleryItems.length === 1 ? "" : "s"} · click any image to enlarge</p><div class="gallery" id="event-gallery">${gallery}</div></div></section>` : (ev.album ? `<section class="section" style="padding-top:0;"><div class="wrap"><p class="note">Photos for this event have not been added yet.</p></div></section>` : "")}
+        ${ev.slug === "holiday-parade-2026" && window.ESA_FESTIVE ? window.ESA_FESTIVE.paradeKitHtml() : ""}
+        ${gallery ? `<section class="section" style="padding-top:0;"><div class="wrap"><h2>From the field</h2><p class="meta">${galleryItems.length} photo${galleryItems.length === 1 ? "" : "s"} · click any image to enlarge</p><div class="gallery" id="event-gallery">${gallery}</div></div></section>` : (ev.album ? `<section class="section" style="padding-top:0;"><div class="wrap"><p class="note">We’re still gathering photos from this night.</p></div></section>` : "")}
         <section>
           <div class="join-band">
             <div>
@@ -401,6 +436,57 @@
       };
       select.addEventListener("change", syncName);
       syncName();
+    }
+
+    initFestive(data, next);
+  }
+
+  function initFestive(data, next) {
+    const festive = window.ESA_FESTIVE;
+    if (!festive) return;
+    const events = data.events || [];
+
+    const kitHome = document.getElementById("parade-kit-home");
+    if (kitHome) {
+      kitHome.innerHTML = isParade2026(next) ? festive.paradeKitHtml() : "";
+    }
+
+    const stoke = document.getElementById("stoke-meter");
+    if (stoke) festive.initStokeMeter(stoke, events.length);
+
+    festive.paintRsvpCounts(document);
+
+    const upcomingList = document.getElementById("upcoming-list");
+    if (upcomingList && upcomingList.querySelector(".spotlight-card") && !festive.prefersReduced()) {
+      const firstCard = upcomingList.querySelector(".spotlight-card");
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          festive.burst("small");
+        }
+      }, { threshold: 0.35 });
+      io.observe(firstCard);
+    }
+
+    const musicMount = document.getElementById("upcoming-music");
+    if (musicMount) festive.initMusicToggle(musicMount);
+
+    const rsvpCount = document.getElementById("rsvp-live-count");
+    const select = document.getElementById("eventSlug");
+    if (rsvpCount && select) {
+      const syncCount = () => {
+        const slug = select.value;
+        if (!slug || slug === "general") {
+          rsvpCount.removeAttribute("data-rsvp-count");
+          rsvpCount.hidden = true;
+          rsvpCount.textContent = "";
+          return;
+        }
+        rsvpCount.setAttribute("data-rsvp-count", slug);
+        festive.paintRsvpCounts(rsvpCount.parentElement);
+      };
+      select.addEventListener("change", syncCount);
+      syncCount();
     }
   }
 
