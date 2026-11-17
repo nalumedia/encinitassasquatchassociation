@@ -2,6 +2,7 @@
 /** Build a static `dist/` tree for Vercel (or any static host). */
 const fs = require("fs");
 const path = require("path");
+const { applyOg, metaForEvent, metaForRsvp, STATIC } = require("./og-meta");
 
 const ROOT = path.join(__dirname, "..");
 const PUBLIC = path.join(ROOT, "public");
@@ -31,15 +32,28 @@ const eventHtml = fs.readFileSync(path.join(PUBLIC, "event.html"), "utf8");
 const rsvpHtml = fs.readFileSync(path.join(PUBLIC, "rsvp.html"), "utf8");
 const slugs = (events.events || []).map((e) => e.slug).filter(Boolean);
 
-for (const slug of slugs) {
-  const ed = path.join(DIST, "events", slug);
-  fs.mkdirSync(ed, { recursive: true });
-  fs.writeFileSync(path.join(ed, "index.html"), eventHtml);
-  const rd = path.join(DIST, "rsvp", slug);
-  fs.mkdirSync(rd, { recursive: true });
-  fs.writeFileSync(path.join(rd, "index.html"), rsvpHtml);
+function writeHtml(dest, html) {
+  fs.mkdirSync(path.dirname(dest), { recursive: true });
+  fs.writeFileSync(dest, html);
 }
-fs.mkdirSync(path.join(DIST, "rsvp", "general"), { recursive: true });
-fs.writeFileSync(path.join(DIST, "rsvp", "general", "index.html"), rsvpHtml);
+
+// Make sure copied top-level pages carry the right static OG tags.
+for (const [route, meta] of Object.entries(STATIC)) {
+  const file = route === "/" ? "index.html" : `${route.replace(/^\//, "")}.html`;
+  const dest = path.join(DIST, file);
+  if (!fs.existsSync(dest)) continue;
+  const html = applyOg(fs.readFileSync(dest, "utf8"), meta);
+  fs.writeFileSync(dest, html);
+}
+
+for (const ev of events.events || []) {
+  if (!ev.slug) continue;
+  writeHtml(path.join(DIST, "events", ev.slug, "index.html"), applyOg(eventHtml, metaForEvent(ev)));
+  writeHtml(path.join(DIST, "rsvp", ev.slug, "index.html"), applyOg(rsvpHtml, metaForRsvp(ev)));
+}
+writeHtml(
+  path.join(DIST, "rsvp", "general", "index.html"),
+  applyOg(rsvpHtml, { ...STATIC["/rsvp"], path: "/rsvp/general" })
+);
 
 console.log(`Built dist/ with ${slugs.length} event pages and RSVP pages.`);

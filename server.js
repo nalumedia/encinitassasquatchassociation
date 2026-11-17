@@ -15,6 +15,7 @@ const path = require("path");
 const { URL } = require("url");
 const querystring = require("querystring");
 const crypto = require("crypto");
+const { applyOg, metaForPath } = require("./scripts/og-meta");
 
 const ROOT = __dirname;
 const PUBLIC = path.join(ROOT, "public");
@@ -54,6 +55,15 @@ const PRETTY = {
   "/grow": "grow.html",
   "/404": "404.html",
 };
+
+function loadEvents() {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(ROOT, "events.json"), "utf8"));
+  } catch (err) {
+    console.warn("Could not read events.json:", err.message);
+    return { events: [] };
+  }
+}
 
 function loadConfig() {
   try {
@@ -111,6 +121,20 @@ function serveFile(res, filePath, requestPath, method) {
     } else {
       headers["Cache-Control"] = "public, max-age=86400";
     }
+
+    const isDynamicHtml =
+      ext === ".html" &&
+      (/^\/events?\/[a-z0-9-]+\/?$/.test(requestPath) ||
+        /^\/rsvp\/[a-z0-9-]+\/?$/.test(requestPath));
+    if (isDynamicHtml) {
+      const html = applyOg(fs.readFileSync(filePath, "utf8"), metaForPath(requestPath, loadEvents()));
+      const buf = Buffer.from(html, "utf8");
+      headers["Content-Length"] = buf.length;
+      res.writeHead(200, headers);
+      if (method === "HEAD") return res.end();
+      return res.end(buf);
+    }
+
     res.writeHead(200, headers);
     if (method === "HEAD") return res.end();
     fs.createReadStream(filePath).pipe(res);
