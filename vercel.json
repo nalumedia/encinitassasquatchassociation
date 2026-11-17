@@ -8,11 +8,11 @@
     },
     {
       "source": "/events/:slug",
-      "destination": "/events/:slug/index.html"
+      "destination": "/event.html"
     },
     {
       "source": "/rsvp/:slug",
-      "destination": "/rsvp/:slug/index.html"
+      "destination": "/rsvp.html"
     }
   ],
   "headers": [
