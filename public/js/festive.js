@@ -249,32 +249,23 @@
     return paradeAudio;
   }
 
+  let jamFileReady = false;
+
+  const JAM_NOTE_SVG = `<svg class="jam-note" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M10 4.2v11.1a3.4 3.4 0 1 1-1.7-3V8.1l10-2.2v7.6a3.4 3.4 0 1 1-1.7-3V4.8L10 4.2Z"/></svg>`;
+  const JAM_EQ_HTML = `<span class="jam-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>`;
+
   function setParadeToggleUi(playing) {
     paradeToggleBtns.forEach((btn) => {
       btn.setAttribute("aria-pressed", playing ? "true" : "false");
       const label = btn.querySelector(".music-label");
-      if (label) label.textContent = playing ? "Mute parade jam" : "Play parade jam";
+      if (label) label.textContent = playing ? "Mute the Parade Jam" : "Play the Parade Jam";
+      const full = playing ? "Mute the Parade Jam" : "Play the Parade Jam";
+      btn.setAttribute("aria-label", full);
     });
   }
 
-  function initMusicToggle(mount) {
-    if (!mount || mount.querySelector(".music-toggle")) return;
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "music-toggle";
-    btn.hidden = true;
-    btn.setAttribute("aria-pressed", "false");
-    btn.innerHTML = `<span class="music-eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="music-label">Play parade jam</span>`;
+  function bindJamButton(btn) {
     const audio = ensureParadeAudio();
-    let ready = false;
-    const show = () => { if (!ready) { ready = true; btn.hidden = false; } };
-    audio.addEventListener("canplaythrough", show);
-    audio.addEventListener("canplay", show);
-    audio.addEventListener("error", () => { btn.hidden = true; });
-    // Probe without relying only on canplay (some browsers are quiet on 404 until play).
-    fetch(PARADE_AUDIO_SRC, { method: "HEAD" }).then((r) => {
-      if (r.ok) show();
-    }).catch(() => {});
     btn.addEventListener("click", async () => {
       try {
         if (audio.paused) await playParadeMusic();
@@ -282,7 +273,88 @@
       } catch (_) { /* autoplay blocked or missing file */ }
     });
     paradeToggleBtns.add(btn);
+    if (jamFileReady) revealJamButton(btn);
+  }
+
+  function revealJamButton(btn) {
+    btn.hidden = false;
+    if (btn.classList.contains("jam-dock")) syncJamDock();
+  }
+
+  function markJamReady() {
+    if (jamFileReady) return;
+    jamFileReady = true;
+    paradeToggleBtns.forEach(revealJamButton);
+    syncJamDock();
+  }
+
+  function initMusicToggle(mount) {
+    if (!mount || mount.querySelector(".music-toggle")) return;
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "music-toggle jam-hero";
+    btn.hidden = true;
+    btn.setAttribute("aria-pressed", "false");
+    btn.setAttribute("aria-label", "Play the Parade Jam");
+    btn.innerHTML = `<span class="jam-badge">${JAM_NOTE_SVG}${JAM_EQ_HTML}</span>
+      <span class="jam-copy">
+        <span class="jam-kicker">10th Encinitas Holiday Parade</span>
+        <span class="music-label">Play the Parade Jam</span>
+      </span>`;
+    bindJamButton(btn);
     mount.appendChild(btn);
+    initJamDock();
+    watchJamHero(btn);
+    probeParadeAudio();
+  }
+
+  function initJamDock() {
+    if (document.querySelector(".jam-dock")) return;
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "music-toggle jam-dock";
+    btn.hidden = true;
+    btn.setAttribute("aria-pressed", "false");
+    btn.setAttribute("aria-label", "Play the Parade Jam");
+    btn.innerHTML = `<span class="jam-badge">${JAM_NOTE_SVG}${JAM_EQ_HTML}</span>
+      <span class="music-label">Play the Parade Jam</span>`;
+    bindJamButton(btn);
+    document.body.appendChild(btn);
+    window.addEventListener("scroll", syncJamDock, { passive: true });
+    window.addEventListener("resize", syncJamDock);
+  }
+
+  function watchJamHero(btn) {
+    if (!("IntersectionObserver" in window)) return;
+    const io = new IntersectionObserver(() => syncJamDock(), { threshold: 0.4 });
+    io.observe(btn);
+  }
+
+  function syncJamDock() {
+    const dock = document.querySelector(".jam-dock");
+    if (!dock || !jamFileReady) return;
+    const heroes = Array.from(document.querySelectorAll(".jam-hero")).filter((el) => !el.hidden);
+    const heroInView = heroes.some((el) => {
+      const r = el.getBoundingClientRect();
+      return r.bottom > 96 && r.top < (window.innerHeight - 24);
+    });
+    dock.classList.toggle("is-visible", !heroInView);
+  }
+
+  let jamProbeStarted = false;
+  function probeParadeAudio() {
+    if (jamProbeStarted) return;
+    jamProbeStarted = true;
+    const audio = ensureParadeAudio();
+    audio.addEventListener("canplaythrough", markJamReady, { once: true });
+    audio.addEventListener("canplay", markJamReady, { once: true });
+    audio.addEventListener("error", () => {
+      jamFileReady = false;
+      paradeToggleBtns.forEach((btn) => { btn.hidden = true; });
+    });
+    fetch(PARADE_AUDIO_SRC, { method: "HEAD" }).then((r) => {
+      if (r.ok) markJamReady();
+    }).catch(() => {});
   }
 
   // Call during a user gesture (submit) so a later play() is more likely to be allowed.

@@ -268,8 +268,8 @@
       if (!list.length) {
         upcomingList.innerHTML = `<p>Nothing dated is on the trail just now. The event history is still on the <a href="/events">Event History</a> page.</p>`;
       } else {
-        upcomingList.innerHTML = list.map((ev) => `
-          <article class="spotlight-card" style="margin-bottom:24px;">
+        upcomingList.innerHTML = list.map((ev, i) => `
+          <article class="spotlight-card${i === 0 ? " is-featured" : ""}" style="margin-bottom:24px;">
             <div class="spotlight-copy">
               <p class="eyebrow">${ESA.escapeHtml(ev.type)}</p>
               <h2>${ESA.escapeHtml(ev.name)}</h2>
@@ -283,6 +283,11 @@
             </div>
             ${paradePanel(ev)}
           </article>`).join("");
+        const featured = upcomingList.querySelector(".spotlight-card.is-featured");
+        if (featured) {
+          featured.insertAdjacentHTML("afterend", paradeMarqueeHtml(events));
+          initTimelineFilms(upcomingList);
+        }
       }
     }
 
@@ -557,6 +562,76 @@
     }
   }
 
+  function pickMarqueePhotos(events) {
+    const bySlug = Object.fromEntries((events || []).map((ev) => [ev.slug, ev]));
+    const plan = [
+      ["holiday-parade-2025", 3],
+      ["holiday-parade-2024", 2],
+      ["holiday-parade-2023", 2],
+      ["holiday-parade-2022", 2],
+      ["holiday-parade-2021", 2],
+      ["parade-prep-2021", 1],
+      ["holiday-parade-2020", 2],
+      ["holiday-parade-2019", 2],
+      ["holiday-parade-2018", 1],
+      ["holiday-parade-2017", 1],
+      ["holiday-parade-2016", 1],
+      ["pride-2025", 2],
+      ["pride-2024", 1],
+      ["beach-cleanup-2024", 1],
+    ];
+    const picks = [];
+    plan.forEach(([slug, count]) => {
+      const ev = bySlug[slug];
+      const imgs = ev && (ev.images || []).filter((img) => img.thumb || img.src);
+      if (!imgs || !imgs.length) return;
+      const chosen = [];
+      if (imgs.length <= count) chosen.push.apply(chosen, imgs);
+      else {
+        for (let i = 1; i <= count; i += 1) {
+          const idx = Math.min(Math.floor((i * imgs.length) / (count + 1)), imgs.length - 1);
+          chosen.push(imgs[idx]);
+        }
+      }
+      chosen.forEach((img) => {
+        const thumb = img.thumb || img.src;
+        if (picks.some((p) => p.thumb === thumb)) return;
+        const n = ev.images.indexOf(img) + 1;
+        picks.push({
+          thumb,
+          href: ESA.eventPath(ev) + "#photo-" + n,
+          label: ev.name + " photo " + n,
+        });
+      });
+    });
+    return picks;
+  }
+
+  function paradeMarqueeHtml(events) {
+    const picks = pickMarqueePhotos(events);
+    if (picks.length < 6) return "";
+    const reduced = window.ESA_FESTIVE && window.ESA_FESTIVE.prefersReduced();
+    function cells(duplicate) {
+      return picks.map((img) => {
+        const src = ESA.imageUrl(img.thumb);
+        const extra = duplicate
+          ? ' tabindex="-1" aria-hidden="true"'
+          : ` aria-label="${ESA.escapeHtml(img.label)}"`;
+        return `<a href="${ESA.escapeHtml(img.href)}"${extra}><img src="${ESA.escapeHtml(src)}" alt="" loading="lazy" width="240" height="180" decoding="async"></a>`;
+      }).join("");
+    }
+    const track = reduced ? cells(false) : (cells(false) + cells(true));
+    const duration = Math.max(48, picks.length * 3.2);
+    const cls = reduced ? "parade-marquee is-static" : "parade-marquee";
+    const dur = reduced ? "" : ` style="--marquee-duration:${duration}s"`;
+    return `<section class="${cls}" aria-label="Scenes from parades past"${dur}>
+      <p class="eyebrow">From parades past</p>
+      <div class="parade-marquee-frame">
+        <div class="parade-marquee-track">${track}</div>
+      </div>
+    </section>`;
+  }
+
   function filmstripHtml(ev) {
     const items = ev.images || [];
     if (items.length < 2) return "";
@@ -579,7 +654,7 @@
   }
 
   function initTimelineFilms(root) {
-    const films = root.querySelectorAll(".tl-film:not(.static)");
+    const films = root.querySelectorAll(".tl-film:not(.static), .parade-marquee:not(.is-static)");
     if (!films.length) return;
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
