@@ -52,9 +52,12 @@
         </div>
         <div>
           <div class="eyebrow" style="color:var(--sun);">In the wild</div>
-          <p><a href="https://www.instagram.com/encinitassasquatchassociation/">Instagram</a><br>
-          <a href="https://www.facebook.com/encinitassasquatchassociation/">Facebook</a><br>
-          <a href="mailto:info@encinitassasquatchassociation.com">info@encinitassasquatchassociation.com</a><br>
+          <nav class="footer-social" aria-label="ESA on social media">
+            <a href="https://www.facebook.com/encinitassasquatchassociation/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34v7.03C18.34 21.25 22 17.09 22 12.07z"/></svg></a>
+            <a href="https://twitter.com/encintassquatch" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.71 10.39 21.66 2h-1.89l-6.9 7.27L7.36 2H2.2l8.33 11.34L2.2 22h1.89l7.28-7.67L16.64 22H21.8l-8.09-11.61Zm-2.57 2.71-.84-1.13L4.77 3.3h2.9l5.4 7.23.84 1.13 7.04 9.42h-2.9l-5.91-7.98Z"/></svg></a>
+            <a href="https://www.instagram.com/encinitassasquatchassociation/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9A4.5 4.5 0 0 1 16.5 21h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3zm0 1.8A2.7 2.7 0 0 0 4.8 7.5v9a2.7 2.7 0 0 0 2.7 2.7h9a2.7 2.7 0 0 0 2.7-2.7v-9a2.7 2.7 0 0 0-2.7-2.7h-9ZM17.4 6.2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 8.2A3.8 3.8 0 1 1 12 15.8 3.8 3.8 0 0 1 12 8.2zm0 1.8A2 2 0 1 0 12 14a2 2 0 0 0 0-4z"/></svg></a>
+          </nav>
+          <p><a href="mailto:info@encinitassasquatchassociation.com">info@encinitassasquatchassociation.com</a><br>
           <a href="https://duckfootbeer.com/">Duck Foot Brewing Co</a></p>
         </div>
       </div>
@@ -604,5 +607,19 @@
       if (i >= 0 && i < items.length) open(i);
     }
   }
+
+
+  // Staggered pop-in for homepage values and About beliefs.
+  document.querySelectorAll("[data-pop-in]").forEach((root) => {
+    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) { root.classList.add("is-inview"); return; }
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) {
+        root.classList.add("is-inview");
+        io.disconnect();
+      }
+    }, { threshold: 0.25 });
+    io.observe(root);
+  });
 
 })();

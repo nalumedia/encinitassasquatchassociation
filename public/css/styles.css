@@ -409,12 +409,17 @@ textarea { min-height: 110px; resize: vertical; }
 .price { font-family: var(--display); font-size: 2.4rem; margin: 8px 0 16px; }
 
 /* About */
-.beliefs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.beliefs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .belief {
   background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 20px;
 }
 .founders { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.founder { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+.founder { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 14px 14px 22px; display: flex; flex-direction: column; }
+.founder-photo {
+  width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top;
+  border-radius: 12px; margin: 0 0 16px; background: var(--paper-deep);
+}
+.founder h3 { margin-bottom: 0.2em; }
 .faq details {
   border-bottom: 1px solid var(--line); padding: 14px 0;
 }
@@ -440,6 +445,19 @@ textarea { min-height: 110px; resize: vertical; }
   display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px;
 }
 .site-footer a { color: var(--sun); }
+.footer-social { display: flex; align-items: center; gap: 10px; margin: 0 0 14px; }
+.footer-social a {
+  display: grid; place-items: center;
+  width: 40px; height: 40px; border-radius: 50%;
+  border: 1px solid rgba(247,241,230,0.22);
+  color: var(--paper) !important;
+  text-decoration: none;
+}
+.footer-social a:hover, .footer-social a:focus-visible {
+  border-color: var(--sun); color: var(--sun) !important; background: rgba(242,184,75,0.1);
+}
+.footer-social svg { width: 18px; height: 18px; display: block; }
+
 .site-footer .muted, .legal { color: rgba(247,241,230,0.6); }
 .legal { width: min(1280px, calc(100% - 40px)); margin: 28px auto 0; font-size: 0.85rem; border-top: 1px solid rgba(247,241,230,0.12); padding-top: 16px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .sighting-trigger {
@@ -480,7 +498,7 @@ textarea { min-height: 110px; resize: vertical; }
 .page-404 { min-height: 60vh; display: grid; place-items: center; text-align: center; padding: 80px 20px; }
 
 @media (max-width: 900px) {
-  .hero-grid, .spotlight-card, .event-hero .wrap, .product, .card-grid, .gallery, .beliefs, .founders, .footer-grid, .join-band {
+  .hero-grid, .spotlight-card, .event-hero .wrap, .product, .card-grid, .gallery, .founders, .footer-grid, .join-band {
     grid-template-columns: 1fr;
   }
   .join-band { flex-direction: column; align-items: flex-start; padding: 32px 24px; }
@@ -931,3 +949,82 @@ textarea { min-height: 110px; resize: vertical; }
   padding-bottom: 0;
 }
 .event-hero .pk-camo { margin-left: 0; margin-right: 0; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; }
+
+/* Homepage — The Sasquatch way */
+.sasquatch-way { padding: 8px 0 48px; }
+.sasquatch-way .eyebrow { margin-bottom: 16px; }
+.way-chips {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-wrap: wrap; gap: 10px 12px;
+}
+.way-chips li {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  border-radius: 999px;
+  padding: 11px 18px 11px 16px;
+  display: inline-flex; align-items: center; gap: 6px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(14px) scale(0.92);
+}
+.way-chips li:nth-child(8n+1) { background: var(--ink); color: var(--paper); }
+.way-chips li:nth-child(8n+2) { background: var(--sea); color: var(--paper); }
+.way-chips li:nth-child(8n+3) { background: var(--sun); color: var(--ink); }
+.way-chips li:nth-child(8n+4) { background: var(--paper); color: var(--ink); border: 1px solid var(--line); }
+.way-chips li:nth-child(8n+5) { background: var(--leaf); color: var(--paper); }
+.way-chips li:nth-child(8n+6) { background: #FF2A9D; color: var(--paper); }
+.way-chips li:nth-child(8n+7) { background: var(--coral); color: var(--paper); }
+.way-chips li:nth-child(8n+8) { background: var(--sea-deep); color: var(--paper); }
+[data-pop-in].is-inview .way-chips li,
+[data-pop-in].is-inview .belief {
+  animation: pop-in 0.55s cubic-bezier(.15,.8,.2,1) forwards;
+}
+[data-pop-in].is-inview .way-chips li:nth-child(1),
+[data-pop-in].is-inview .belief:nth-child(1) { animation-delay: 0.02s; }
+[data-pop-in].is-inview .way-chips li:nth-child(2),
+[data-pop-in].is-inview .belief:nth-child(2) { animation-delay: 0.09s; }
+[data-pop-in].is-inview .way-chips li:nth-child(3),
+[data-pop-in].is-inview .belief:nth-child(3) { animation-delay: 0.16s; }
+[data-pop-in].is-inview .way-chips li:nth-child(4),
+[data-pop-in].is-inview .belief:nth-child(4) { animation-delay: 0.23s; }
+[data-pop-in].is-inview .way-chips li:nth-child(5) { animation-delay: 0.30s; }
+[data-pop-in].is-inview .way-chips li:nth-child(6) { animation-delay: 0.37s; }
+[data-pop-in].is-inview .way-chips li:nth-child(7) { animation-delay: 0.44s; }
+[data-pop-in].is-inview .way-chips li:nth-child(8) { animation-delay: 0.51s; }
+@keyframes pop-in {
+  to { opacity: 1; transform: none; }
+}
+
+/* About — beliefs with icons */
+.belief {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 14px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 22px 20px 20px;
+  opacity: 0; transform: translateY(14px) scale(0.96);
+}
+.belief-mark {
+  width: 64px; height: 64px; border-radius: 50%;
+  display: grid; place-items: center; flex: 0 0 auto;
+}
+.belief-icon { width: 34px; height: 34px; display: block; }
+.belief-rust .belief-mark { background: rgba(214, 95, 67, 0.14); color: var(--coral); }
+.belief-sun .belief-mark { background: var(--sun); color: var(--ink); }
+.belief-leaf .belief-mark { background: rgba(73, 107, 63, 0.14); color: var(--leaf); }
+.belief-pink .belief-mark { background: rgba(255, 42, 157, 0.12); color: #FF2A9D; }
+.belief p { margin: 0; font-size: 1.02rem; }
+
+@media (max-width: 900px) {
+  .beliefs { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .beliefs { grid-template-columns: 1fr; }
+  .way-chips li { font-size: 1.05rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .way-chips li, .belief {
+    opacity: 1 !important; transform: none !important; animation: none !important;
+  }
+}
