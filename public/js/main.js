@@ -471,14 +471,74 @@
       io.observe(firstCard);
     }
 
-    const musicMount = document.getElementById("upcoming-music");
-    if (musicMount) festive.initMusicToggle(musicMount);
+    document.querySelectorAll("#upcoming-music, #rsvp-music").forEach((el) => {
+      festive.initMusicToggle(el);
+    });
 
     const rsvpCount = document.getElementById("rsvp-live-count");
     const select = document.getElementById("eventSlug");
+    const paradeHero = document.getElementById("rsvp-parade-hero");
+    const successArt = document.getElementById("rsvp-success-art");
+    if (successArt && !successArt.dataset.filled) {
+      successArt.innerHTML = festive.rsvpSuccessArtHtml();
+      successArt.dataset.filled = "1";
+    }
+    const successCamo = document.getElementById("rsvp-success-camo");
+    if (successCamo && !successCamo.dataset.filled) {
+      successCamo.innerHTML = festive.rsvpSuccessCamoHtml();
+      successCamo.dataset.filled = "1";
+    }
+    const introDefaults = (() => {
+      const title = document.getElementById("rsvp-title");
+      const lede = document.getElementById("rsvp-lede");
+      const eyebrow = document.querySelector("#rsvp-intro .eyebrow");
+      return {
+        title: title ? title.textContent : "",
+        lede: lede ? lede.textContent : "",
+        eyebrow: eyebrow ? eyebrow.textContent : "",
+      };
+    })();
+    function themeRsvp(slug) {
+      const isParade = slug === "holiday-parade-2026";
+      document.body.classList.toggle("is-parade-rsvp", isParade);
+      if (paradeHero) {
+        if (isParade) {
+          if (!paradeHero.dataset.filled) {
+            paradeHero.innerHTML = festive.rsvpParadeHeroHtml();
+            paradeHero.dataset.filled = "1";
+          }
+          paradeHero.hidden = false;
+        } else {
+          paradeHero.hidden = true;
+        }
+      }
+      const title = document.getElementById("rsvp-title");
+      const lede = document.getElementById("rsvp-lede");
+      const eyebrow = document.querySelector("#rsvp-intro .eyebrow");
+      if (isParade) {
+        if (eyebrow) eyebrow.textContent = "10th Encinitas Holiday Parade";
+        if (title) {
+          title.classList.add("pk-lit");
+          title.textContent = "Join the march";
+        }
+        if (lede) {
+          lede.textContent = "The route is calling. Wear camo. Come lit. Tell us you’re marching — or that you can help the float, the bubbles, or the glow-stick handoff.";
+        }
+      } else {
+        if (eyebrow) eyebrow.textContent = introDefaults.eyebrow;
+        if (title) {
+          title.classList.remove("pk-lit");
+          title.style.removeProperty("background-image");
+          title.textContent = introDefaults.title;
+        }
+        if (lede) lede.textContent = introDefaults.lede;
+      }
+    }
     if (rsvpCount && select) {
       const syncCount = () => {
         const slug = select.value;
+        themeRsvp(slug);
+        festive.paintAttendees(slug);
         if (!slug || slug === "general") {
           rsvpCount.removeAttribute("data-rsvp-count");
           rsvpCount.hidden = true;
@@ -490,6 +550,10 @@
       };
       select.addEventListener("change", syncCount);
       syncCount();
+    } else if (paradeHero || document.getElementById("marching-wall")) {
+      const slug = (select && select.value) || "";
+      themeRsvp(slug);
+      if (slug) festive.paintAttendees(slug);
     }
   }
 

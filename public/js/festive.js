@@ -235,40 +235,171 @@
   }
 
   /* ——— Music toggle (no autoplay; hide if file missing) ——— */
+  const PARADE_AUDIO_SRC = "/audio/parade.mp3";
+  let paradeAudio = null;
+  const paradeToggleBtns = new Set();
+
+  function ensureParadeAudio() {
+    if (paradeAudio) return paradeAudio;
+    paradeAudio = new Audio(PARADE_AUDIO_SRC);
+    paradeAudio.loop = true;
+    paradeAudio.preload = "auto";
+    paradeAudio.addEventListener("play", () => setParadeToggleUi(true));
+    paradeAudio.addEventListener("pause", () => setParadeToggleUi(false));
+    return paradeAudio;
+  }
+
+  function setParadeToggleUi(playing) {
+    paradeToggleBtns.forEach((btn) => {
+      btn.setAttribute("aria-pressed", playing ? "true" : "false");
+      const label = btn.querySelector(".music-label");
+      if (label) label.textContent = playing ? "Mute parade jam" : "Play parade jam";
+    });
+  }
+
   function initMusicToggle(mount) {
-    if (!mount) return;
+    if (!mount || mount.querySelector(".music-toggle")) return;
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "music-toggle";
     btn.hidden = true;
     btn.setAttribute("aria-pressed", "false");
     btn.innerHTML = `<span class="music-eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="music-label">Play parade jam</span>`;
-    const audio = new Audio("/audio/parade.mp3");
-    audio.loop = true;
-    audio.preload = "auto";
+    const audio = ensureParadeAudio();
     let ready = false;
     const show = () => { if (!ready) { ready = true; btn.hidden = false; } };
     audio.addEventListener("canplaythrough", show);
     audio.addEventListener("canplay", show);
     audio.addEventListener("error", () => { btn.hidden = true; });
     // Probe without relying only on canplay (some browsers are quiet on 404 until play).
-    fetch("/audio/parade.mp3", { method: "HEAD" }).then((r) => {
+    fetch(PARADE_AUDIO_SRC, { method: "HEAD" }).then((r) => {
       if (r.ok) show();
     }).catch(() => {});
     btn.addEventListener("click", async () => {
       try {
-        if (audio.paused) {
-          await audio.play();
-          btn.setAttribute("aria-pressed", "true");
-          btn.querySelector(".music-label").textContent = "Mute parade jam";
-        } else {
-          audio.pause();
-          btn.setAttribute("aria-pressed", "false");
-          btn.querySelector(".music-label").textContent = "Play parade jam";
-        }
+        if (audio.paused) await playParadeMusic();
+        else audio.pause();
       } catch (_) { /* autoplay blocked or missing file */ }
     });
+    paradeToggleBtns.add(btn);
     mount.appendChild(btn);
+  }
+
+  // Call during a user gesture (submit) so a later play() is more likely to be allowed.
+  function unlockParadeMusic() {
+    const audio = ensureParadeAudio();
+    if (!audio.paused) return;
+    const wasMuted = audio.muted;
+    audio.muted = true;
+    const p = audio.play();
+    if (p && p.then) {
+      p.then(() => {
+        audio.pause();
+        audio.currentTime = 0;
+        audio.muted = wasMuted;
+        setParadeToggleUi(false);
+      }).catch(() => { audio.muted = wasMuted; });
+    } else {
+      audio.muted = wasMuted;
+    }
+  }
+
+  async function playParadeMusic() {
+    const audio = ensureParadeAudio();
+    try {
+      audio.muted = false;
+      await audio.play();
+      setParadeToggleUi(true);
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function rsvpParadeHeroHtml() {
+    return `${lightsSvg()}${bubblesHtml()}
+      <div class="wrap">
+        <p class="pk-kicker">10th Encinitas Holiday Parade</p>
+        <p class="pk-headline">Wear camo.</p>
+        <p class="pk-lit">Come lit.</p>
+        ${camoHtml()}
+      </div>`;
+  }
+
+  function rsvpSuccessArtHtml() {
+    return `${lightsSvg()}${bubblesHtml()}`;
+  }
+
+  function rsvpSuccessCamoHtml() {
+    return camoHtml();
+  }
+
+  function displayNameFromFull(name) {
+    const parts = String(name || "").trim().replace(/\s+/g, " ").split(" ").filter(Boolean);
+    if (!parts.length) return "";
+    if (parts.length === 1) return parts[0];
+    return `${parts[0]} ${parts[parts.length - 1].charAt(0).toUpperCase()}.`;
+  }
+
+  async function fetchAttendees(slug) {
+    const cfg = window.ESA_CONFIG || {};
+    if (!cfg.supabaseUrl || !cfg.supabaseKey || !slug) return null;
+    try {
+      const res = await fetch(`${cfg.supabaseUrl}/rest/v1/rpc/esa_rsvp_attendees`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          apikey: cfg.supabaseKey,
+          Authorization: "Bearer " + cfg.supabaseKey,
+        },
+        body: JSON.stringify({ event_slug: slug }),
+      });
+      if (!res.ok) return null;
+      const rows = await res.json();
+      return Array.isArray(rows) ? rows : [];
+    } catch (_) { return null; }
+  }
+
+  function renderAttendees(rows) {
+    const wall = document.getElementById("marching-wall");
+    const list = document.getElementById("marching-list");
+    const empty = document.getElementById("marching-empty");
+    if (!wall || !list) return;
+    wall.hidden = false;
+    list.innerHTML = "";
+    const people = (rows || []).filter((r) => r && r.display_name);
+    if (!people.length) {
+      if (empty) empty.hidden = false;
+      return;
+    }
+    if (empty) empty.hidden = true;
+    people.forEach((r) => {
+      const li = document.createElement("li");
+      const name = document.createElement("span");
+      name.textContent = r.display_name;
+      li.appendChild(name);
+      const n = Number(r.party_size) || 1;
+      if (n > 1) {
+        const party = document.createElement("span");
+        party.className = "party";
+        party.textContent = `party of ${n}`;
+        li.appendChild(party);
+      }
+      list.appendChild(li);
+    });
+  }
+
+  async function paintAttendees(slug) {
+    const wall = document.getElementById("marching-wall");
+    if (!wall) return;
+    if (!slug) {
+      wall.hidden = true;
+      return;
+    }
+    wall.hidden = false;
+    const rows = await fetchAttendees(slug);
+    if (rows == null) return;
+    renderAttendees(rows);
   }
 
   /* ——— RSVP counts via rpc (no PII) ——— */
@@ -328,7 +459,9 @@
   }
 
   window.ESA_FESTIVE = {
-    paradeArtHtml, paradeKitHtml, initStokeMeter, burst, initMusicToggle,
+    paradeArtHtml, paradeKitHtml, rsvpParadeHeroHtml, rsvpSuccessArtHtml, rsvpSuccessCamoHtml,
+    initStokeMeter, burst, initMusicToggle, unlockParadeMusic, playParadeMusic,
     fetchRsvpCount, paintRsvpCounts, bumpRsvpCount, countLabel, prefersReduced,
+    displayNameFromFull, fetchAttendees, renderAttendees, paintAttendees,
   };
 })();

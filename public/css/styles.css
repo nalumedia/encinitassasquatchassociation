@@ -935,6 +935,7 @@ textarea { min-height: 110px; resize: vertical; }
 
 @media (prefers-reduced-motion: reduce) {
   .pk-lights, .pk-bulb-glow, .pk-lit, .pk-tracks, .pk-bubbles span,
+  .rsvp-parade-hero .pk-lights, .rsvp-success-card .pk-lit,
   .stoke-item.is-maxed .stoke-bar > span,
   .music-toggle[aria-pressed="true"] .music-eq i {
     animation: none !important;
@@ -1027,4 +1028,85 @@ textarea { min-height: 110px; resize: vertical; }
   .way-chips li, .belief {
     opacity: 1 !important; transform: none !important; animation: none !important;
   }
+}
+
+/* RSVP parade theme, celebratory success, marching wall */
+.rsvp-parade-hero {
+  position: relative;
+  overflow: hidden;
+  background: #171513;
+  color: var(--paper);
+  padding: 72px 0 0;
+}
+.rsvp-parade-hero .wrap { position: relative; z-index: 2; }
+.rsvp-parade-hero .pk-lights { height: 110px; }
+.rsvp-parade-hero .pk-headline { font-size: clamp(2.8rem, 7vw, 4.8rem); }
+.rsvp-parade-hero .pk-lit { font-size: clamp(3rem, 7.6vw, 5.2rem); }
+.rsvp-parade-hero .pk-camo { margin: 28px 0 0; height: 96px; }
+.rsvp-parade-hero .pk-tracks img { height: 64px; }
+
+.rsvp-intro { margin-bottom: 28px; }
+.rsvp-intro .upcoming-hero-tools { margin-top: 16px; }
+body.is-parade-rsvp .rsvp-intro h1.pk-lit {
+  font-size: clamp(2.6rem, 6vw, 4rem);
+  margin: 0 0 12px;
+}
+
+.rsvp-success { margin: 0 0 28px; }
+.rsvp-success-card {
+  position: relative;
+  overflow: hidden;
+  background: #171513;
+  color: var(--paper);
+  border-radius: 24px;
+  padding: 80px 28px 0;
+  box-shadow: var(--shadow);
+}
+.rsvp-success-card .pk-lights { height: 110px; }
+.rsvp-success-card .pk-kicker,
+.rsvp-success-card .pk-lit,
+.rsvp-success-card p { position: relative; z-index: 3; }
+.rsvp-success-card .pk-lit { font-size: clamp(2.6rem, 7vw, 4.2rem); margin: 0 0 14px; }
+.rsvp-success-card #rsvp-thanks-message { font-size: 1.15rem; max-width: 28em; }
+.rsvp-success-card .rsvp-thanks-count {
+  color: var(--sun);
+  font-family: var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.rsvp-success-actions { margin: 22px 0 0; position: relative; z-index: 3; }
+.rsvp-success-card .pk-camo { margin: 28px -28px 0; height: 80px; }
+
+.marching-wall { margin-top: 56px; padding-top: 8px; }
+.marching-wall h2 { margin: 0 0 8px; }
+.marching-empty { color: var(--muted); margin: 8px 0 0; }
+.marching-list {
+  list-style: none; padding: 0; margin: 18px 0 0;
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.marching-list li {
+  display: inline-flex; align-items: baseline; gap: 8px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+.marching-list .party {
+  font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted); font-weight: 700;
+}
+body.is-parade-rsvp .marching-list li {
+  background: #171513;
+  border-color: rgba(247,241,230,0.16);
+  color: var(--paper);
+}
+body.is-parade-rsvp .marching-list .party { color: var(--sun); }
+
+@media (max-width: 800px) {
+  .rsvp-parade-hero { padding-top: 56px; }
+  .rsvp-parade-hero .pk-camo, .rsvp-success-card .pk-camo { height: 72px; }
+  .rsvp-success-card { padding-top: 72px; }
 }

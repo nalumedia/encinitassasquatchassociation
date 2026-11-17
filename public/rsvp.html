@@ -7,29 +7,38 @@
   <meta name="description" content="RSVP for an ESA event or volunteer for the float, a beach cleanup, or whatever the trail needs next.">
   <link rel="icon" type="image/png" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/css/styles.css?v=20261116y">
-  <script src="/js/config.js?v=20261116y"></script>
-  <script src="/js/events.js?v=20261116y" defer></script>
-  <script src="/js/festive.js?v=20261116y" defer></script>
-  <script src="/js/main.js?v=20261116y" defer></script>
-  <script src="/js/forms.js?v=20261116y" defer></script>
+  <link rel="stylesheet" href="/css/styles.css?v=20261117a">
+  <script src="/js/config.js?v=20261117a"></script>
+  <script src="/js/events.js?v=20261117a" defer></script>
+  <script src="/js/festive.js?v=20261117a" defer></script>
+  <script src="/js/main.js?v=20261117a" defer></script>
+  <script src="/js/forms.js?v=20261117a" defer></script>
 </head>
 <body data-page="rsvp">
   <a class="skip-link" href="#main">Skip to content</a>
   <div id="site-header"></div>
   <main id="main">
-    <section class="section">
+    <section class="rsvp-parade-hero" id="rsvp-parade-hero" hidden></section>
+    <section class="section rsvp-page" id="rsvp-page">
       <div class="wrap-narrow">
-        <p class="eyebrow">Show up · pitch in</p>
-        <h1>Event RSVP / volunteer</h1>
-        <p>Coming to the 10th Holiday Parade? Want a rake at Beacons? Or just raise a hand for the next thing that needs a crew? Tell us how you want to help. Name and email are required.</p>
-        <p class="rsvp-count" id="rsvp-live-count" hidden></p>
+        <div class="rsvp-intro" id="rsvp-intro">
+          <p class="eyebrow">Show up · pitch in</p>
+          <h1 id="rsvp-title">Event RSVP / volunteer</h1>
+          <p id="rsvp-lede">Coming to the 10th Holiday Parade? Want a rake at Beacons? Or just raise a hand for the next thing that needs a crew? Tell us how you want to help. Name and email are required.</p>
+          <div class="upcoming-hero-tools" id="rsvp-music"></div>
+          <p class="rsvp-count" id="rsvp-live-count" hidden></p>
+        </div>
 
-        <div id="rsvp-thanks" class="success" hidden>
-          <h2>Track recorded.</h2>
-          <p id="rsvp-thanks-message">Got it. We’ll see you in the wild.</p>
-          <p id="rsvp-thanks-count" class="rsvp-thanks-count" hidden></p>
-          <p style="margin-top:16px;"><a class="btn btn-sun" href="/upcoming">Back to upcoming events</a></p>
+        <div id="rsvp-thanks" class="rsvp-success" hidden>
+          <div class="rsvp-success-card">
+            <div id="rsvp-success-art"></div>
+            <p class="pk-kicker">You’re on the route</p>
+            <h2 class="pk-lit">Track recorded.</h2>
+            <p id="rsvp-thanks-message">Got it. We’ll see you in the wild.</p>
+            <p id="rsvp-thanks-count" class="rsvp-thanks-count" hidden></p>
+            <p class="rsvp-success-actions"><a class="btn btn-sun" href="/upcoming">Back to upcoming events</a></p>
+            <div id="rsvp-success-camo"></div>
+          </div>
         </div>
 
         <form id="rsvp-form" class="form-shell" action="/api/rsvp" method="post" novalidate>
@@ -95,16 +104,21 @@
             <textarea id="notes" name="notes" placeholder="Allergies, lima-bean opinions, costume plans…"></textarea>
           </div>
 
-
           <div class="hp-field" aria-hidden="true">
             <label for="rsvp-company">Company</label>
             <input type="text" id="rsvp-company" name="company" tabindex="-1" autocomplete="off">
           </div>
           <button class="btn btn-sea" type="submit">Send RSVP</button>
         </form>
+
+        <section class="marching-wall" id="marching-wall" hidden>
+          <p class="eyebrow">The crew</p>
+          <h2>Who’s marching</h2>
+          <p class="marching-empty" id="marching-empty" hidden>No tracks on this trail yet. Be the first to RSVP.</p>
+          <ul class="marching-list" id="marching-list"></ul>
+        </section>
       </div>
     </section>
-
   </main>
   <div id="site-footer"></div>
 </body>

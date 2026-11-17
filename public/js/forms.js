@@ -182,19 +182,32 @@
         user_agent: (navigator.userAgent || "").slice(0, 500) || null,
         source: "esa-site",
       };
+      const festive = window.ESA_FESTIVE;
+      if (festive && festive.unlockParadeMusic) festive.unlockParadeMusic();
       try {
         await postSubmission(cfg().rsvpTable, payload);
         rsvp.hidden = true;
         thanks.hidden = false;
+        const first = name.split(/\s+/)[0];
         document.getElementById("rsvp-thanks-message").textContent =
-          `Got it, ${name}. We'll see you in the wild — or in the group chat.`;
+          `Got it, ${first}. Wear camo. Come lit. We’ll see you on the route.`;
         const thanksCount = document.getElementById("rsvp-thanks-count");
-        if (window.ESA_FESTIVE) {
-          window.ESA_FESTIVE.burst("big");
-          window.ESA_FESTIVE.bumpRsvpCount(payload.event_slug, payload.party_size || 1).then((n) => {
+        if (festive) {
+          festive.burst("big");
+          festive.playParadeMusic();
+          festive.bumpRsvpCount(payload.event_slug, payload.party_size || 1).then((n) => {
             if (thanksCount && n != null && !Number.isNaN(n)) {
               thanksCount.hidden = false;
-              thanksCount.textContent = window.ESA_FESTIVE.countLabel(n);
+              thanksCount.textContent = festive.countLabel(n);
+            }
+          });
+          festive.paintAttendees(payload.event_slug).then(() => {
+            const list = document.getElementById("marching-list");
+            if (!list || !list.children.length) {
+              festive.renderAttendees([{
+                display_name: festive.displayNameFromFull(name),
+                party_size: payload.party_size || 1,
+              }]);
             }
           });
         }
