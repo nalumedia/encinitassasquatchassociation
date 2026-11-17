@@ -39,6 +39,8 @@ const MIME = {
   ".txt": "text/plain; charset=utf-8",
   ".csv": "text/csv; charset=utf-8",
   ".map": "application/json",
+  ".mp3": "audio/mpeg",
+  ".m4a": "audio/mp4",
 };
 
 const PRETTY = {
@@ -84,7 +86,7 @@ function safeJoin(root, rel) {
   return resolved;
 }
 
-function serveFile(res, filePath, requestPath) {
+function serveFile(res, filePath, requestPath, method) {
   fs.stat(filePath, (err, stat) => {
     if (err || !stat.isFile()) {
       const notFound = path.join(PUBLIC, "404.html");
@@ -110,6 +112,7 @@ function serveFile(res, filePath, requestPath) {
       headers["Cache-Control"] = "public, max-age=86400";
     }
     res.writeHead(200, headers);
+    if (method === "HEAD") return res.end();
     fs.createReadStream(filePath).pipe(res);
   });
 }
@@ -384,7 +387,7 @@ const server = http.createServer(async (req, res) => {
     if (!filePath) {
       return send(res, 403, "Forbidden\n", { "Content-Type": "text/plain; charset=utf-8" });
     }
-    serveFile(res, filePath, urlPath);
+    serveFile(res, filePath, urlPath, req.method);
   } catch (err) {
     const status = err.status || (err instanceof SyntaxError ? 400 : 500);
     if (status === 400) return sendJson(res, 400, { ok: false, errors: ["Could not read that request body."] });
