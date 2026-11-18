@@ -529,6 +529,9 @@
       festive.initMusicToggle(el);
     });
 
+    const themeMount = document.getElementById("home-theme-player");
+    if (themeMount) festive.initThemePlayer(themeMount);
+
     const eventHero = document.querySelector("body.is-parade-event .event-hero");
     if (eventHero && !festive.prefersReduced()) {
       const ioEvent = new IntersectionObserver((entries) => {

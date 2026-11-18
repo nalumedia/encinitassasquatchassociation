@@ -379,6 +379,7 @@
   }
 
   async function playParadeMusic() {
+    pauseThemeMusic();
     const audio = ensureParadeAudio();
     try {
       audio.muted = false;
@@ -388,6 +389,103 @@
     } catch (_) {
       return false;
     }
+  }
+
+
+  const THEME_AUDIO_SRC = "/audio/esa-theme.mp3";
+  const THEME_TITLE = "ESA theme";
+  let themeAudio = null;
+  const themeToggleBtns = new Set();
+  let themeFileReady = false;
+  let themeProbeStarted = false;
+
+  function ensureThemeAudio() {
+    if (themeAudio) return themeAudio;
+    themeAudio = new Audio(THEME_AUDIO_SRC);
+    themeAudio.loop = false;
+    themeAudio.preload = "metadata";
+    themeAudio.addEventListener("play", () => setThemeToggleUi(true));
+    themeAudio.addEventListener("pause", () => setThemeToggleUi(false));
+    themeAudio.addEventListener("ended", () => setThemeToggleUi(false));
+    return themeAudio;
+  }
+
+  function pauseThemeMusic() {
+    if (themeAudio && !themeAudio.paused) themeAudio.pause();
+  }
+
+  function pauseParadeMusic() {
+    if (paradeAudio && !paradeAudio.paused) paradeAudio.pause();
+  }
+
+  function setThemeToggleUi(playing) {
+    themeToggleBtns.forEach((btn) => {
+      btn.setAttribute("aria-pressed", playing ? "true" : "false");
+      btn.setAttribute("aria-label", playing ? "Pause ESA theme" : "Play ESA theme");
+      const action = btn.querySelector(".theme-action");
+      if (action) action.textContent = playing ? "Pause" : "Play";
+    });
+  }
+
+  function revealThemeButton(btn) {
+    btn.hidden = false;
+  }
+
+  function markThemeReady() {
+    if (themeFileReady) return;
+    themeFileReady = true;
+    themeToggleBtns.forEach(revealThemeButton);
+  }
+
+  function bindThemeButton(btn) {
+    const audio = ensureThemeAudio();
+    btn.addEventListener("click", async () => {
+      try {
+        if (audio.paused) {
+          pauseParadeMusic();
+          audio.muted = false;
+          await audio.play();
+          setThemeToggleUi(true);
+        } else {
+          audio.pause();
+        }
+      } catch (_) { /* autoplay blocked or missing file */ }
+    });
+    themeToggleBtns.add(btn);
+    if (themeFileReady) revealThemeButton(btn);
+  }
+
+  function probeThemeAudio() {
+    if (themeProbeStarted) return;
+    themeProbeStarted = true;
+    const audio = ensureThemeAudio();
+    audio.addEventListener("canplaythrough", markThemeReady, { once: true });
+    audio.addEventListener("canplay", markThemeReady, { once: true });
+    audio.addEventListener("error", () => {
+      themeFileReady = false;
+      themeToggleBtns.forEach((btn) => { btn.hidden = true; });
+    });
+    fetch(THEME_AUDIO_SRC, { method: "HEAD" }).then((r) => {
+      if (r.ok) markThemeReady();
+    }).catch(() => {});
+  }
+
+  function initThemePlayer(mount) {
+    if (!mount || mount.querySelector(".music-toggle")) return;
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "music-toggle theme-hero";
+    btn.hidden = true;
+    btn.setAttribute("aria-pressed", "false");
+    btn.setAttribute("aria-label", "Play ESA theme");
+    btn.innerHTML = `<span class="jam-badge">${JAM_NOTE_SVG}${JAM_EQ_HTML}</span>
+      <span class="jam-copy">
+        <span class="jam-kicker theme-action">Play</span>
+        <span class="music-label">${THEME_TITLE}</span>
+      </span>`;
+    bindThemeButton(btn);
+    mount.appendChild(btn);
+    probeThemeAudio();
   }
 
   const PARADE_2026 = {
@@ -588,7 +686,7 @@
 
   window.ESA_FESTIVE = {
     paradeArtHtml, paradeKitHtml, rsvpParadeHeroHtml, rsvpSuccessArtHtml, rsvpSuccessCamoHtml, whenWhereHtml, paradeDetailsHtml,
-    initStokeMeter, burst, initMusicToggle, unlockParadeMusic, playParadeMusic,
+    initStokeMeter, burst, initMusicToggle, unlockParadeMusic, playParadeMusic, initThemePlayer,
     fetchRsvpCount, paintRsvpCounts, bumpRsvpCount, countLabel, prefersReduced,
     displayNameFromFull, fetchAttendees, renderAttendees, paintAttendees,
   };
