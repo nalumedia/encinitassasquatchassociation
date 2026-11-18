@@ -42,6 +42,7 @@ const MIME = {
   ".map": "application/json",
   ".mp3": "audio/mpeg",
   ".m4a": "audio/mp4",
+  ".ics": "text/calendar; charset=utf-8",
 };
 
 const PRETTY = {

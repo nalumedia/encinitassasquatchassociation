@@ -729,15 +729,15 @@ def main() -> int:
     parade_photo = ev_photos.get("holiday-parade-2025")[0] or (web / "parade-night-float.jpg")
     parade_focus = ev_photos.get("holiday-parade-2025")[1] or "52% 58%"
     save_png(
-        card_parade("Upcoming  ·  Encinitas Sasquatch Association", parade_photo, parade_focus, "5:30 PM  ·  Coast Hwy 101  ·  40 & Fabulous"),
+        card_parade("Upcoming  ·  Encinitas Sasquatch Association", parade_photo, parade_focus, "5:30 p.m. step-off  ·  South Coast Hwy 101  ·  D St. to J St."),
         OUT / "upcoming.png",
     )
     save_png(
-        card_parade("10th parade  ·  Encinitas Sasquatch Association", parade_photo, parade_focus, "Saturday, December 5, 2026  ·  Coast Hwy 101"),
+        card_parade("10th parade  ·  Encinitas Sasquatch Association", parade_photo, parade_focus, "Saturday, December 5, 2026  ·  5:30 p.m. step-off  ·  D St. to J St."),
         OUT / "events" / "holiday-parade-2026.png",
     )
     save_png(
-        card_parade("RSVP  ·  Encinitas Sasquatch Association", parade_photo, parade_focus, "March with us  ·  December 5, 2026"),
+        card_parade("RSVP  ·  Encinitas Sasquatch Association", parade_photo, parade_focus, "5:30 p.m. step-off  ·  South Coast Hwy 101  ·  D St. to J St."),
         OUT / "rsvp-holiday-parade-2026.png",
     )
 

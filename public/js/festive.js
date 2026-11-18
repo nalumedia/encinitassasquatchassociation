@@ -388,10 +388,38 @@
     }
   }
 
+  const PARADE_2026 = {
+    dateLabel: "Saturday, December 5, 2026",
+    timeLead: "Parade begins at",
+    timeLabel: "5:30 p.m. step-off",
+    route: "South Coast Hwy 101 · D St. to J St.",
+    city: "Encinitas",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=South+Coast+Highway+101+%26+D+St%2C+Encinitas%2C+CA",
+    icsUrl: "/calendar/holiday-parade-2026.ics",
+  };
+
+  function whenWhereHtml(opts) {
+    const compact = !!(opts && opts.compact);
+    const maps = PARADE_2026.mapsUrl;
+    const ics = PARADE_2026.icsUrl;
+    return `<section class="when-where${compact ? " is-compact" : ""}" aria-label="When and where">
+      <p class="ww-kicker">When &amp; Where</p>
+      <p class="ww-date">${PARADE_2026.dateLabel}</p>
+      <p class="ww-time"><span class="ww-time-lead">${PARADE_2026.timeLead}</span> ${PARADE_2026.timeLabel}</p>
+      <p class="ww-route">${PARADE_2026.route}</p>
+      <p class="ww-city">${PARADE_2026.city}</p>
+      <div class="ww-actions btn-row">
+        <a class="btn btn-sun" href="${maps}" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+        <a class="btn btn-ghost" href="${ics}" download="holiday-parade-2026.ics">Add to calendar</a>
+      </div>
+    </section>`;
+  }
+
   function rsvpParadeHeroHtml() {
     return `${lightsSvg()}${bubblesHtml()}
       <div class="wrap">
         <p class="pk-kicker">10th Encinitas Holiday Parade</p>
+        ${whenWhereHtml()}
         <p class="pk-headline">Wear camo.</p>
         <p class="pk-lit">Come lit.</p>
         ${camoHtml()}
@@ -531,7 +559,7 @@
   }
 
   window.ESA_FESTIVE = {
-    paradeArtHtml, paradeKitHtml, rsvpParadeHeroHtml, rsvpSuccessArtHtml, rsvpSuccessCamoHtml,
+    paradeArtHtml, paradeKitHtml, rsvpParadeHeroHtml, rsvpSuccessArtHtml, rsvpSuccessCamoHtml, whenWhereHtml,
     initStokeMeter, burst, initMusicToggle, unlockParadeMusic, playParadeMusic,
     fetchRsvpCount, paintRsvpCounts, bumpRsvpCount, countLabel, prefersReduced,
     displayNameFromFull, fetchAttendees, renderAttendees, paintAttendees,

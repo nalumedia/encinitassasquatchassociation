@@ -244,7 +244,7 @@
           <div class="spotlight-copy">
             <p class="eyebrow">Next up · ${ESA.escapeHtml(next.type)}</p>
             <h2>${ESA.escapeHtml(next.name)}</h2>
-            <p class="meta" style="color:var(--sun);">${ESA.escapeHtml(ESA.formatDate(next))}${next.location ? " · " + ESA.escapeHtml(next.location) : ""}</p>
+            ${isParade2026(next) && window.ESA_FESTIVE ? window.ESA_FESTIVE.whenWhereHtml({ compact: true }) : `<p class="meta" style="color:var(--sun);">${ESA.escapeHtml(ESA.formatDate(next))}${next.location ? " · " + ESA.escapeHtml(next.location) : ""}</p>`}
             <p>${ESA.escapeHtml(next.summary)}</p>
             <p class="rsvp-count" data-rsvp-count="${ESA.escapeHtml(next.slug)}" hidden></p>
             <div class="btn-row">
@@ -273,7 +273,7 @@
             <div class="spotlight-copy">
               <p class="eyebrow">${ESA.escapeHtml(ev.type)}</p>
               <h2>${ESA.escapeHtml(ev.name)}</h2>
-              <p class="meta" style="color:var(--sun);">${ESA.escapeHtml(ESA.formatDate(ev))}${ev.location ? " · " + ESA.escapeHtml(ev.location) : ""}</p>
+              ${isParade2026(ev) && window.ESA_FESTIVE ? window.ESA_FESTIVE.whenWhereHtml({ compact: true }) : `<p class="meta" style="color:var(--sun);">${ESA.escapeHtml(ESA.formatDate(ev))}${ev.location ? " · " + ESA.escapeHtml(ev.location) : ""}</p>`}
               <p>${ESA.escapeHtml(ev.summary)}</p>
               <p class="rsvp-count" data-rsvp-count="${ESA.escapeHtml(ev.slug)}" hidden></p>
               <div class="btn-row">
@@ -378,7 +378,9 @@
             <div>
               <p class="eyebrow">${ESA.escapeHtml(ev.type)}${ev.theme ? " · " + ESA.escapeHtml(ev.theme) : ""}</p>
               <h1>${ESA.escapeHtml(ev.name)}</h1>
-              <p class="meta">${ESA.escapeHtml(ESA.formatDate(ev))}${ev.location ? " · " + ESA.escapeHtml(ev.location) : ""}</p>
+              ${isParade2026(ev) && window.ESA_FESTIVE
+                ? window.ESA_FESTIVE.whenWhereHtml()
+                : `<p class="meta">${ESA.escapeHtml(ESA.formatDate(ev))}${ev.location ? " · " + ESA.escapeHtml(ev.location) : ""}</p>`}
               ${ev.subhead ? `<p class="typewriter" style="min-height:0;margin:12px 0 16px;">${ESA.escapeHtml(ev.subhead)}</p>` : ""}
               <div class="btn-row" style="margin:18px 0 24px;">
                 ${cta}

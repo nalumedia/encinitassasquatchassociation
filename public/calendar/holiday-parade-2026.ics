@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Encinitas Sasquatch Association//Holiday Parade 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:holiday-parade-2026@encinitassasquatchassociation.com
+DTSTAMP:20261118T021500Z
+DTSTART:20261206T013000Z
+DTEND:20261206T043000Z
+SUMMARY:10th Encinitas Holiday Parade
+LOCATION:South Coast Highway 101 & D St, Encinitas, CA
+DESCRIPTION:Saturday, December 5, 2026. Parade begins at 5:30 p.m. South Co
+ ast Highway 101, between D St. and J St. (Encinitas). ESA staging is still 
+ to be announced.
+URL:https://www.encinitassasquatchassociation.com/events/holiday-parade-202
+ 6
+END:VEVENT
+END:VCALENDAR
