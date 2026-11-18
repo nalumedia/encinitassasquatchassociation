@@ -1378,3 +1378,170 @@ body.is-parade-rsvp .marching-list .party { color: var(--sun); }
   .event-hero .when-where,
   .rsvp-parade-hero .when-where { max-width: none; }
 }
+
+
+/* Parade 2026 event page — expect, herd, decade grid */
+#event-page > .parade-marquee {
+  width: min(1280px, calc(100% - 40px));
+  margin: 16px auto 48px;
+}
+.event-hero .upcoming-hero-tools { margin: 8px 0 14px; }
+.event-hero .rsvp-count { margin: 0 0 10px; }
+
+.parade-expect {
+  position: relative;
+  overflow: hidden;
+  background: #171513;
+  color: var(--paper);
+  padding: 72px 0 64px;
+}
+.parade-expect .pk-lights { height: 100px; }
+.parade-expect .wrap { position: relative; z-index: 2; }
+.parade-expect h2 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  color: var(--paper);
+  margin: 0 0 28px;
+}
+.expect-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 40px;
+}
+.expect-list li { margin: 0; }
+.expect-kicker {
+  display: block;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sun);
+  margin: 0 0 6px;
+}
+.expect-list strong {
+  display: block;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--paper);
+}
+.expect-list p {
+  margin: 6px 0 0;
+  color: rgba(247, 241, 230, 0.8);
+  max-width: 32em;
+}
+
+.parade-herd {
+  padding: 64px 0;
+}
+.parade-herd h2 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  margin: 0 0 16px;
+}
+.parade-herd p {
+  max-width: 38em;
+  font-size: 1.12rem;
+}
+
+.parade-years {
+  background: #171513;
+  color: var(--paper);
+  padding: 64px 0 72px;
+}
+.parade-years h2 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  color: var(--paper);
+  margin: 0 0 12px;
+}
+.parade-years-lede {
+  max-width: 38em;
+  color: rgba(247, 241, 230, 0.82);
+  margin: 0 0 32px;
+}
+.parade-year-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.parade-year-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(247, 241, 230, 0.06);
+  border: 1px solid rgba(247, 241, 230, 0.14);
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--paper);
+  min-height: 100%;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.parade-year-card:hover, .parade-year-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--sun);
+}
+.parade-year-card img,
+.parade-year-fallback {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: #111;
+}
+.parade-year-fallback {
+  display: grid;
+  place-items: center;
+  background:
+    url("/assets/parade/camo.png"),
+    #171513;
+  background-size: 180px 180px;
+}
+.parade-year-fallback span {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #FF2A9D;
+}
+.parade-year-copy { padding: 14px 16px 16px; }
+.parade-year-kicker {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sun);
+  margin: 0 0 4px;
+}
+.parade-year-card h3 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 0 0 6px;
+  color: var(--paper);
+}
+.parade-year-card p {
+  margin: 0;
+  color: rgba(247, 241, 230, 0.78);
+  font-size: 0.95rem;
+}
+.parade-year-card .pill { margin-top: 10px; }
+.parade-year-card.is-next { border-color: var(--sun); }
+
+.parade-crew { padding-top: 8px; }
+body.is-parade-event .parade-crew .marching-wall { margin-top: 8px; }
+
+@media (max-width: 800px) {
+  .expect-list { grid-template-columns: 1fr; gap: 22px; }
+  .parade-expect { padding: 56px 0 48px; }
+  .parade-herd, .parade-years { padding: 48px 0 56px; }
+  .parade-year-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .parade-year-card h3 { font-size: 1.05rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parade-year-card:hover, .parade-year-card:focus-visible { transform: none; }
+  .parade-expect .pk-lights { animation: none !important; }
+}
