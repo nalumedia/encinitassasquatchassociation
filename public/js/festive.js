@@ -47,7 +47,15 @@
     </aside>`;
   }
 
-  function paradeKitHtml() {
+  function paradeKitHtml(opts) {
+    const includeStaging = !(opts && opts.staging === false);
+    const staging = includeStaging ? `<div class="pk-staging">
+          <div>
+            <p class="pk-kicker">Staging area</p>
+            <strong>TBD</strong>
+          </div>
+          <p>We’ll let you know once we get our number assigned. Watch this space.</p>
+        </div>` : "";
     return `<section class="parade-kit" id="parade-kit">
       ${lightsSvg()}
       <div class="wrap">
@@ -78,13 +86,7 @@
             </div>
           </div>
         </div>
-        <div class="pk-staging">
-          <div>
-            <p class="pk-kicker">Staging area</p>
-            <strong>TBD</strong>
-          </div>
-          <p>We’ll let you know once we get our number assigned. Watch this space.</p>
-        </div>
+        ${staging}
         <div class="pk-foot">
           <p>Let’s light up Encinitas.</p>
           <p class="pk-kicker">Keep believing · Est. 2016</p>
@@ -430,47 +432,27 @@
     return `${lightsSvg()}${bubblesHtml()}`;
   }
 
-  function paradeExpectHtml() {
-    return `<section class="parade-expect" id="what-to-expect">
-      ${lightsSvg()}
+  function paradeDetailsHtml(rsvpHref) {
+    const href = rsvpHref || "/rsvp/holiday-parade-2026";
+    return `<section class="parade-details" id="parade-details">
       <div class="wrap">
-        <p class="pk-kicker">The night ahead</p>
+        <p class="pk-kicker">The details</p>
         <h2>What to expect</h2>
         <ul class="expect-list">
           <li>
-            <span class="expect-kicker">The route</span>
-            <strong>South Coast Hwy 101 · D St. to J St.</strong>
-            <p>South Coast Highway 101, between D St. and J St. (Encinitas).</p>
-          </li>
-          <li>
-            <span class="expect-kicker">Step-off</span>
-            <strong>5:30 p.m. step-off</strong>
-            <p>Parade begins at 5:30 p.m. on Saturday, December 5, 2026.</p>
-          </li>
-          <li>
             <span class="expect-kicker">This year’s theme</span>
             <strong>40 &amp; Fabulous</strong>
-            <p>We’re going back to the ’80s with a DJ techno dance party.</p>
-          </li>
-          <li>
-            <span class="expect-kicker">The look</span>
-            <strong>Wear camo. Come lit. Bring a friend.</strong>
+            <p>Ten years of walking the 101 together. We’re going back to the ’80s with a DJ techno dance party.</p>
           </li>
         </ul>
-      </div>
-    </section>`;
-  }
-
-  function paradeJoinHtml(rsvpHref) {
-    const href = rsvpHref || "/rsvp/holiday-parade-2026";
-    return `<section class="parade-herd" id="join-the-herd">
-      <div class="wrap">
-        <p class="pk-kicker">Save your spot</p>
-        <h2>How to join the herd</h2>
-        <p>Want to ride, walk, wrangle giveaways, or cheer from the curb? RSVP and we’ll find you a spot.</p>
-        <p>ESA staging is still to be announced — we’ll email you once we get our number assigned. Watch this space.</p>
-        <div class="btn-row" style="margin-top:22px;">
-          <a class="btn btn-sun" href="${href}">RSVP / volunteer</a>
+        <div class="parade-herd-block" id="join-the-herd">
+          <p class="pk-kicker">Save your spot</p>
+          <h2>How to join the herd</h2>
+          <p>Want to ride, walk, wrangle giveaways, or cheer from the curb? RSVP and we’ll find you a spot.</p>
+          <p>ESA staging is still to be announced — we’ll email you once we get our number assigned. Watch this space.</p>
+          <div class="btn-row" style="margin-top:22px;">
+            <a class="btn btn-sun" href="${href}">RSVP / volunteer</a>
+          </div>
         </div>
       </div>
     </section>`;
@@ -605,7 +587,7 @@
   }
 
   window.ESA_FESTIVE = {
-    paradeArtHtml, paradeKitHtml, rsvpParadeHeroHtml, rsvpSuccessArtHtml, rsvpSuccessCamoHtml, whenWhereHtml, paradeExpectHtml, paradeJoinHtml,
+    paradeArtHtml, paradeKitHtml, rsvpParadeHeroHtml, rsvpSuccessArtHtml, rsvpSuccessCamoHtml, whenWhereHtml, paradeDetailsHtml,
     initStokeMeter, burst, initMusicToggle, unlockParadeMusic, playParadeMusic,
     fetchRsvpCount, paintRsvpCounts, bumpRsvpCount, countLabel, prefersReduced,
     displayNameFromFull, fetchAttendees, renderAttendees, paintAttendees,

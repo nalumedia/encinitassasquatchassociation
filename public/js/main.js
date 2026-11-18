@@ -377,40 +377,30 @@
       if (isParadePage) {
         const festive = window.ESA_FESTIVE;
         eventMount.innerHTML = `
-        <section class="event-hero">
+        <section class="event-hero parade-event-hero">
           <div class="wrap">
-            <div>
-              <p class="eyebrow">${ESA.escapeHtml(ev.type)}${ev.theme ? " · " + ESA.escapeHtml(ev.theme) : ""}</p>
-              <h1>${ESA.escapeHtml(ev.name)}</h1>
-              ${festive.whenWhereHtml()}
-              ${ev.subhead ? `<p class="typewriter" style="min-height:0;margin:12px 0 16px;">${ESA.escapeHtml(ev.subhead)}</p>` : ""}
-              <div class="btn-row" style="margin:18px 0 12px;">
-                ${cta}
-                <a class="btn btn-ghost" href="/events">All events</a>
-              </div>
-              <div class="upcoming-hero-tools" id="event-music"></div>
-              <p class="rsvp-count" data-rsvp-count="${ESA.escapeHtml(ev.slug)}" hidden></p>
-              ${partners}
-              ${ev.isUpcoming ? `<span class="pill pill-sun">Upcoming</span>` : `<span class="pill">Past event</span>`}
+            <p class="eyebrow">${ESA.escapeHtml(ev.type)}${ev.theme ? " · " + ESA.escapeHtml(ev.theme) : ""}</p>
+            <h1>${ESA.escapeHtml(ev.name)}</h1>
+            ${ev.subhead ? `<p class="typewriter parade-event-subhead">${ESA.escapeHtml(ev.subhead)}</p>` : ""}
+            ${festive.whenWhereHtml()}
+            <div class="btn-row">
+              ${cta}
             </div>
-            ${festive.paradeArtHtml()}
+            ${partners}
           </div>
         </section>
+        <section class="parade-music" aria-label="Parade jam">
+          <div class="wrap">
+            <div class="upcoming-hero-tools" id="event-music"></div>
+          </div>
+        </section>
+        ${festive.paradeKitHtml({ staging: false })}
         ${paradeMarqueeHtml(events)}
-        ${festive.paradeExpectHtml()}
-        ${festive.paradeJoinHtml(ESA.rsvpPath(ev))}
-        <section class="section">
-          <div class="wrap prose">
-            <h2>The story</h2>
-            ${ev.body.split(/\n\n/).map((p) => `<p>${ESA.escapeHtml(p)}</p>`).join("")}
-            ${highlights ? `<h3>Along the trail</h3><ul class="highlights">${highlights}</ul>` : ""}
-            ${notes}
-          </div>
-        </section>
-        ${festive.paradeKitHtml()}
+        ${festive.paradeDetailsHtml(ESA.rsvpPath(ev))}
         ${paradeYearsHtml(events)}
         <section class="parade-crew section">
           <div class="wrap">
+            <p class="rsvp-count" data-rsvp-count="${ESA.escapeHtml(ev.slug)}" hidden></p>
             <div class="stoke-meter" id="stoke-meter"></div>
             <section class="marching-wall" id="marching-wall" hidden>
               <p class="eyebrow">The crew</p>
